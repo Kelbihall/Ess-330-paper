@@ -22,5 +22,15 @@ bibliography: references.bib
 ---
 
 ## Proposal #1
+Title: Give a short, informative title describing the project.
+
+Justification: Write a short paragraph (~150 words) explaining the significance of the project with supporting background information. You must include at least two references (with proper APA citation format) that back up your reasoning for significance. (10 points)
+
+Research objective/question/hypothesis: Include the specific objective that you aim to achieve in this study and a testable hypothesis, model or analysis you want to carry out. (5 points)
+
+Proposed Methods: Briefly (short paragraph) describe how you plan to carry out your study. Specify the datasets and variables available and needed (try to provide links/citations for your datasets, or a notion of where you will get your data). Each project should integrate at least two data sources! Additionally, describe the scope of your study (e.g., spatial and temporal scale) and the statistical tests you will use to test your hypothesis. (10 points)
+
+Expected Outcomes: Based on your research question, describe what you expect to find in the results and the reason such an outcome is important. (5 points)
+
 
 [@krabbe2015aligning]
