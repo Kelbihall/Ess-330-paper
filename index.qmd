@@ -1,10 +1,23 @@
 ---
 title: My Paper
 authors:
-  - name: Norah Jones
-    affiliation: The University
+  - name: Kelbi Hall
+    affiliation: Colorado State University 
     roles: writing
     corresponding: true
+  - name: Chloe Rogozinski
+    affiliation: Colorado State University
+    roles: writing
+    corresponding: true
+  - name: Troy Ferguson
+    affiliation: Colorado State University
+    roles: writing
+    corresponding: true
+  - name: Gabriela Valdez
+    affiliation: Colorado State University
+    roles: writing
+    corresponding: true
+
 bibliography: references.bib
 ---
 
