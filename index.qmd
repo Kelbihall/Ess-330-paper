@@ -8,29 +8,97 @@ authors:
   - name: Chloe Rogozinski
     affiliation: Colorado State University
     roles: writing
-    corresponding: true
-  - name: Troy Ferguson
-    affiliation: Colorado State University
-    roles: writing
-    corresponding: true
+    corresponding: false
   - name: Gabriela Valdez
     affiliation: Colorado State University
     roles: writing
-    corresponding: true
+    corresponding: false
 
 bibliography: references.bib
 ---
 
 ## Proposal #1
-Title: Give a short, informative title describing the project.
 
-Justification: Write a short paragraph (~150 words) explaining the significance of the project with supporting background information. You must include at least two references (with proper APA citation format) that back up your reasoning for significance. (10 points)
+Title:How Transparent Are Corporate Sustainability Claims?
 
-Research objective/question/hypothesis: Include the specific objective that you aim to achieve in this study and a testable hypothesis, model or analysis you want to carry out. (5 points)
+Justification: Many fashion brands advertise themselves as eco friendly, yet transparency and accountability often fall short. Greenwashing misleads consumers, undermines actual sustainability efforts, and can stall regulatory progress. Understanding which companies are genuinely sustainable requires comparison of public claims to verified practices.
 
-Proposed Methods: Briefly (short paragraph) describe how you plan to carry out your study. Specify the datasets and variables available and needed (try to provide links/citations for your datasets, or a notion of where you will get your data). Each project should integrate at least two data sources! Additionally, describe the scope of your study (e.g., spatial and temporal scale) and the statistical tests you will use to test your hypothesis. (10 points)
+Research Question:Are sustainability claims made by major fashion brands supported by transparent, measurable, and verifiable data?
 
-Expected Outcomes: Based on your research question, describe what you expect to find in the results and the reason such an outcome is important. (5 points)
+Methods:Collect corporate sustainability reports from top fast fashion brands.
+Use datasets such as the Fashion Transparency Index from Fashion Revolution and Sustainable Apparel Coalition’s Higg Index to compare claims to actual performance.
+Use investigative reports from sources like Changing Markets Foundation and third-party certifications like GOTS and OEKO-TEX.
+In addition to collecting and analyzing quantitative data we can use R to conduct qualitative content analysis comparing language in reports vs. metrics presented in third-party tools.
+
+Expected Outcomes: Expect to find significant variation in transparency levels among brands, with many overstating their sustainability. Findings may support the need for standardized regulations for environmental claims in fashion marketing.
+
+[@fashiontransparency2023] [@higgindex2023]
+
+## Proposal #2
+
+Kelbi Hall
+Title: Fast Fashion and Water Consumption in Textile Production
+
+Justification:
+The fast fashion industry is one of the most water intensive industries in the world, especially due to cotton cultivation and textile dyeing. Understanding the water footprint of textiles, particularly in fast fashion producing countries, is essential for creating sustainable solutions and influencing consumer and policy behavior.
+
+Research Objective: Quantify the water used in textile production, focusing on cotton based fabrics and water consumption across high output countries like India, China, and Bangladesh. Identify which stages of production are the most water intensive and how water use varies by country.
+
+Methods: This study involves the use of two key data sources.
+
+Water Footprint Network Dataset that shows the water footprint of crop products, I'll use the data specifically for Blue, green, and grey water, which play into the footprint of cotton lint, broken down by country. This will be used to calculate and compare water usage per kg of cotton among major textile producing countries.
+
+Additionally, FAO AQUASTAT:Dataset: Water Withdrawal by Sector (agriculture, industry)
+National level industrial and agricultural water withdrawals for countries heavily involved in textile manufacturing.The data can be used to contextualize how much of a country's total water resources are consumed by textile related sectors.
+Using these sources, I will compare cotton water usage across countries and sectors.
+
+Expected Outcome: The study will reveal significant differences in water usage for cotton across countries, highlight unsustainable water use patterns tied to fast fashion production, and suggest where changes in sourcing or farming practices could reduce impact. These findings will support calls for better regulation and transparency in fashion supply chains.
+
+[@fao_aquastat] [@doi:10.1021/es500130g]
+
+## Proposal #3
+ 
+ Title:  Wild Fire and Water Quality
+
+Justification: With the increasing frequency of wildfires due to a warming climate, water quality after fires has become an increasing issue. Looking at how areas have been impacted by wildfire and how the water quality changes will give a better idea of how to plan for addressing water quality and implement remediation efforts to improve the burned areas within the watersheds.
+
+Research Objective: Observe how water quality changes during and after wildfires. What water quality parameters change?
+
+Methods: For this study, we would search for water quality data for a watershed that has been impacted by fire. Planning to use data from the Cache La Poudre River in Fort Collins' water quality data, comparing before and after the Cameron Peak Fire in 2020 from the USGS water data website. An additional source of data would be the wildfire data from the Cameron Peak fire from Dataset.gov. Also, it would be useful to compare the water quality data to the amount of areas reforested after the fire and see if it improves. This can come from the Coalition for the Poudre River Watershed website. We can run the statistics to get the average river flow and pollutant data after determining which data is available, and compare that to the average information before the fire.
+
+https://waterdata.usgs.gov/download-samples/#dataProfile=fullphyschem&monitoringLocationIdentifier=USGS-06752260
+
+https://catalog.data.gov/dataset?tags=wildfire
+
+Expected Outcome: By comparing the wildfire and water quality data, we should see the water quality severely degrade during and after the Cameron Peak fire in the Cache la Poudre River. This will be the baseline that should continuously improve after remediation efforts began in 2021. 
+
+[@doi:10.1021/es500130g]
+[@Dobre_2022]
 
 
-[@krabbe2015aligning]
+## Proposal #4
+
+Title: Land Use Changes and River Flow - Colorado River
+
+Justification: A growing population and changes in land use change how rivers flow and move through the landscape. With several states as stakeholders of the Colorado River, and it providing water for millions of Americans, it is important to understand how land use can change the amount of water that flows through the Colorado River. A better understanding of these impacts can help stakeholders manage the Colorado River Watershed for future water needs.
+
+Research Question: How does land use impact stream flows in the Colorado River, and are there any land use changes that make drastic changes in the amount of the flow?
+
+Methods: Using river flow data found from USGS and land use data in Colorado from the Colorado government site, we will compare how land use changes over the years have changed flow amounts. Using statistics in R, we can get averages and compare the years when there were big changes in land use, and if these changes affected the outflow of the Colorado River. If there is no significant data that works, this can be switched to increasing greenhouse gas data and Colorado River flows. Based on what I found, the state data may be sufficient to use for this if we can find significant correlations between the two datasets. 
+
+https://data.colorado.gov/Environment/DRCOG-Land-Cover-Data/asfj-s9k5/about_data
+
+https://waterdata.usgs.gov/co/nwis/
+
+
+Expected Outcome: I think there will be a correlation between land use changes and river flow in the Colorado River historically.
+
+[@https://doi.org/10.1890/080085]
+[@TONG2002377]
+
+## Proposal #5 
+
+Gabriela Valdez: Impact Climate Change Has on Weather Patterns 
+
+
+[@StottPeter2016AoEW]
