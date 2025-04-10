@@ -1,48 +1,171 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.6.40">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Lab 7 Final Project - Intro/Methods Draft</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
+    <title>Lab 7 Final Project - Intro/Methods Draft</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+        margin-bottom: 0em;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -53,15 +176,13 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-81e35ebdb4125010edbabe6010586085.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script async="" src="https://hypothes.is/embed.js"></script>
+     <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     document.body.classList.add('hypothesis-enabled');
   });
-</script>
-
-
-<meta name="citation_title" content="Lab 7 Final Project - Intro/Methods Draft">
+</script>  
+      <meta name="citation_title" content="Lab 7 Final Project - Intro/Methods Draft">
 <meta name="citation_author" content="Kelbi Hall">
 <meta name="citation_author" content="Chloe Rogozinski">
 <meta name="citation_author" content="Gabriela Valdez">
@@ -74,9 +195,16 @@ div.csl-indent {
 <meta name="citation_reference" content="citation_title=Textiles and clothing, value added (% of manufacturing) (NV.MNF.TXTL.ZS.UN);,citation_author=World Bank;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url=https://data.worldbank.org/indicator/NV.MNF.TXTL.ZS.UN;">
 </head>
 
-<body>
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
 
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+            <a href="./index.qmd" class="btn btn-primary quarto-download-embed" download="index.qmd">Download Source</a>
+          </div>
+
+     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Lab 7 Final Project - Intro/Methods Draft</h1>
@@ -123,7 +251,7 @@ div.csl-indent {
               </div>
       </div>
       <div class="quarto-title-meta-column-end quarto-other-formats-target">
-      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div><div class="quarto-title-meta-contents"><p><a href="index-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Bundle</a></p></div></div></div>
+      </div>
     </div>
 
 
@@ -144,18 +272,13 @@ div.csl-indent {
   <li><a href="#exploring-the-data" id="toc-exploring-the-data" class="nav-link" data-scroll-target="#exploring-the-data">Exploring the Data</a></li>
   <li><a href="#preliminary-methods-and-planning" id="toc-preliminary-methods-and-planning" class="nav-link" data-scroll-target="#preliminary-methods-and-planning">Preliminary Methods and Planning</a></li>
   </ul>
-<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li></ul></div></nav>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-
-
-  
-
-
-<p>Title:Wasting Water for Wardrobes: Analyzing Water Stress and Textile Manufacturing in Fast Fashion</p>
+       <p>Title:Wasting Water for Wardrobes: Analyzing Water Stress and Textile Manufacturing in Fast Fashion</p>
 <section id="introduction-background-and-motivation" class="level1">
 <h1>Introduction, Background, and Motivation</h1>
 <p>The fast fashion industry is among the most polluting in the world, contributing approximately 8% of total global carbon emissions and consuming 20% of all global wastewater—about 79 trillion liters <a href="Bailey%20et%20al.,%202022"><span class="citation" data-cites="w14071073">Bailey, Basu, and Sharma (<span>2022</span>)</span></a>. As demand grows, many companies outsource production to low- and middle-income countries due to cheaper labor and manufacturing costs, which in turn drives down prices and boosts consumer appeal. According to The Environmental Impacts of Fast Fashion on Water Quality, brands today release twice as many collections as they did before the 2000s. With lower quality and cost, garments are consumed and discarded more rapidly, accelerating water usage and waste (Bailey et al., 2022). Chemical use in textile production also poses significant environmental threats. Pesticides used in cotton farming lead to runoff that introduces excessive nutrients into waterways, resulting in dead zones caused by algal blooms. Additionally, fabric dyeing processes account for 17–20% of industrial water pollution globally due to the release of hazardous chemicals (Bildirici et al., 2024). According to the World Trade Organization’s 2022 analysis, China is the largest global textile exporter, accounting for 31.7% of exports. Bangladesh and India follow with 7.9% and 3.1% respectively (Bildirici et al., 2024). This project focuses on water-stressed areas in these three major textile-producing countries. China, with 20% of the world’s population, has access to only 6% of global freshwater. Uneven distribution and widespread pollution have caused severe water scarcity in many regions (Leung, 2023). India holds 18% of the world’s population but only 4% of freshwater resources. Poor water sanitation practices leave 600 million people without reliable access to usable water (World Bank, 2023). Although Bangladesh has access to 3% of the world’s freshwater and accounts for just 2% of the global population, only 40% of its population has access to safe water. Cotton production places immense stress on freshwater availability, as growing just one pair of jeans requires 7,500–10,000 liters of water—the equivalent of what one person would drink over seven years (Bildirici et al., 2024).</p>
@@ -192,7 +315,49 @@ div.csl-indent {
 <p>Country Code: ISO 3-letter country code</p>
 <p>Year: Year of the observation</p>
 <p>TextileValue: Percentage of total manufacturing value from textiles</p>
-<div class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Read Excel files from data/ folder</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>water <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/API_ER.H2O.FWST.ZS_DS2_en_excel_v2_14076.xls"</span>, <span class="at">skip =</span> <span class="dv">3</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>textiles <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/API_NV.MNF.TXTL.ZS.UN_DS2_en_excel_v2_26490.xls"</span>, <span class="at">skip =</span> <span class="dv">3</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Reshape to long format (match all 4-digit year columns)</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>water_long <span class="ot">&lt;-</span> water <span class="sc">%&gt;%</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">matches</span>(<span class="st">"^</span><span class="sc">\\</span><span class="st">d{4}$"</span>),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"Year"</span>, <span class="at">values_to =</span> <span class="st">"WaterStress"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="st">`</span><span class="at">Country Name</span><span class="st">`</span>, <span class="st">`</span><span class="at">Country Code</span><span class="st">`</span>, Year, WaterStress)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>textiles_long <span class="ot">&lt;-</span> textiles <span class="sc">%&gt;%</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">matches</span>(<span class="st">"^</span><span class="sc">\\</span><span class="st">d{4}$"</span>),</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"Year"</span>, <span class="at">values_to =</span> <span class="st">"TextileValue"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="st">`</span><span class="at">Country Name</span><span class="st">`</span>, <span class="st">`</span><span class="at">Country Code</span><span class="st">`</span>, Year, TextileValue)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Merge datasets by country and year</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>combined <span class="ot">&lt;-</span> <span class="fu">left_join</span>(water_long, textiles_long, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"Country Name"</span>, <span class="st">"Country Code"</span>, <span class="st">"Year"</span>))</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert year to numeric</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>combined<span class="sc">$</span>Year <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(combined<span class="sc">$</span>Year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview the water stress data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>water_long <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(WaterStress)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 4
    `Country Name` `Country Code` Year  WaterStress
@@ -208,8 +373,12 @@ div.csl-indent {
  9 Afghanistan    AFG            1983         56.6
 10 Afghanistan    AFG            1984         60.1</code></pre>
 </div>
-<a class="quarto-notebook-link" id="nblink-1" href="index-preview.html">Source: Article Notebook</a></div>
-<div class="cell">
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview the textile manufacturing data</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>textiles_long <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(TextileValue)) <span class="sc">%&gt;%</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 4
    `Country Name` `Country Code` Year  TextileValue
@@ -225,23 +394,23 @@ div.csl-indent {
  9 Albania        ALB            2018          36.6
 10 Albania        ALB            2019          36.4</code></pre>
 </div>
-</div>
-<div class="cell">
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Count missing values</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Missing Water Stress values:"</span>, <span class="fu">sum</span>(<span class="fu">is.na</span>(water_long<span class="sc">$</span>WaterStress)), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Missing Water Stress values: 11000 </code></pre>
 </div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Missing Textile Manufacturing values:"</span>, <span class="fu">sum</span>(<span class="fu">is.na</span>(textiles_long<span class="sc">$</span>TextileValue)), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Missing Textile Manufacturing values: 13692 </code></pre>
 </div>
-</div>
+</div></div>
 </section>
 <section id="preliminary-methods-and-planning" class="level1">
 <h1>Preliminary Methods and Planning</h1>
 <p>To explore the connection between fast fashion and water stress, we’re starting with exploratory data analysis and some basic statistics to help us understand the patterns in both datasets. Planned Methods We plan to use time series plots to look at water stress and textile manufacturing over time, especially in countries like India, China, and Bangladesh where textile output is high. We’ll also create scatterplots and run simple correlation tests to see if there’s a relationship between the two variables across countries and years. If the data supports it, we might use grouped summaries or rankings to highlight countries facing both high water stress and high textile manufacturing percentages. Later on, if it makes sense, we may try a simple linear regression to see how well textile output predicts water stress. Do We Have Everything We Need Right now, we’re working with two solid datasets that give us a national-level view of water stress and textile manufacturing. This gives us a strong starting point, but we’re also interested in bringing in a third dataset that shows the number of fast fashion companies operating in each country. That would help us connect the environmental side of the story with the actual industry presence and possibly strengthen our analysis. Challenges in the Data One challenge is missing values. Some countries have incomplete records or gaps for certain years, which could limit how many data points we can actually use. Another challenge is scale. Both datasets are national-level, so we’re not capturing what’s happening at the regional level where production and water use might be more concentrated. Lastly, some countries may define or report textile manufacturing a little differently, which could affect consistency. Challenges in the Methods Even if we find a strong correlation, it won’t mean that one variable is directly causing the other. There could be other factors at play like agriculture, urbanization, or climate that influence water stress. Also, if we decide to use more advanced methods like regression, we’ll need to make sure our data is complete enough and that we’re not oversimplifying complex issues. Why These Methods Fit Our Goals The methods we’ve outlined help us start answering our main question by identifying patterns that connect fast fashion production with water use. By looking at changes over time and comparing countries, we can begin to understand where this relationship is the strongest. This approach allows us to stay rooted in real-world data while setting the stage for deeper insights and possible solutions later on.</p>
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-w14071073" class="csl-entry" role="listitem">
 Bailey, K., A. Basu, and S. Sharma. 2022. <span>“The Environmental Impacts of Fast Fashion on Water Quality: A Systematic Review.”</span> <em>Water (Basel)</em> 14 (7): 1073. <a href="https://doi.org/10.3390/w14071073">https://doi.org/10.3390/w14071073</a>.
 </div>
@@ -260,9 +429,10 @@ World Bank. 2022. <span>“How Is India Addressing Its Water Needs?”</span> 20
 <div id="ref-worldbank2023textiles" class="csl-entry" role="listitem">
 ———. 2023b. <span>“Textiles and Clothing, Value Added (% of Manufacturing) (NV.MNF.TXTL.ZS.UN).”</span> <a href="https://data.worldbank.org/indicator/NV.MNF.TXTL.ZS.UN">https://data.worldbank.org/indicator/NV.MNF.TXTL.ZS.UN</a>.
 </div>
-</div></section></div></main>
-<!-- /main column -->
-<script id="quarto-html-after-body" type="application/javascript">
+</div>
+</section>
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -678,10 +848,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-</div> <!-- /content -->
-
-
-
-
+</script>  </div> <!-- /content --> 
+  
 </body></html>
