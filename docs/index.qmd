@@ -19,11 +19,10 @@ editor:
     wrap: 72
 ---
 
-Title:Wasting Water for Wardrobes: Analyzing Water Stress and Textile
-Manufacturing in Fast Fashion
+# 1. Title: Wasting Water for Wardrobes: Analyzing Water Stress and Textile Manufacturing in Fast Fashion
 
-# Introduction, Background, and Motivation
-The fast fashion industry is among the most polluting in the world, contributing approximately 8% of total global carbon emissions and consuming 20% of all global wastewater—about 79 trillion liters [@w14071073](Bailey et al., 2022). As demand grows, many companies outsource production to low- and middle-income countries due to cheaper labor and manufacturing costs, which in turn drives down prices and boosts consumer appeal. According to The Environmental Impacts of Fast Fashion on Water Quality, brands today release twice as many collections as they did before the 2000s. With lower quality and cost, garments are consumed and discarded more rapidly, accelerating water usage and waste (Bailey et al., 2022).
+# 2. Introduction, Background, and Motivation
+The fast fashion industry is among the most polluting in the world, contributing approximately 8% of total global carbon emissions and consuming 20% of all global wastewater—about 79 trillion liters (Bailey et al., 2022). As demand grows, many companies outsource production to low- and middle-income countries due to cheaper labor and manufacturing costs, which in turn drives down prices and boosts consumer appeal. According to The Environmental Impacts of Fast Fashion on Water Quality, brands today release twice as many collections as they did before the 2000s. With lower quality and cost, garments are consumed and discarded more rapidly, accelerating water usage and waste (Bailey et al., 2022).
 Chemical use in textile production also poses significant environmental threats. Pesticides used in cotton farming lead to runoff that introduces excessive nutrients into waterways, resulting in dead zones caused by algal blooms. Additionally, fabric dyeing processes account for 17–20% of industrial water pollution globally due to the release of hazardous chemicals (Bildirici et al., 2024).
 According to the World Trade Organization’s 2022 analysis, China is the largest global textile exporter, accounting for 31.7% of exports. Bangladesh and India follow with 7.9% and 3.1% respectively (Bildirici et al., 2024). This project focuses on water-stressed areas in these three major textile-producing countries.
 China, with 20% of the world’s population, has access to only 6% of global freshwater. Uneven distribution and widespread pollution have caused severe water scarcity in many regions (Leung, 2023). India holds 18% of the world’s population but only 4% of freshwater resources. Poor water sanitation practices leave 600 million people without reliable access to usable water (World Bank, 2023). Although Bangladesh has access to 3% of the world’s freshwater and accounts for just 2% of the global population, only 40% of its population has access to safe water. Cotton production places immense stress on freshwater availability, as growing just one pair of jeans requires 7,500–10,000 liters of water—the equivalent of what one person would drink over seven years (Bildirici et al., 2024).
@@ -31,7 +30,7 @@ China, with 20% of the world’s population, has access to only 6% of global fre
 [@w14071073] [@su17010069] [@leung2023china] [@worldbank2022india]
 [@worldbank2023freshwater] [@worldbank2023textiles]
 
-## Our Data
+Our Data 
 
 Our main focus in this project is to bring into light the realities of
 neglectful consumption of water from the fast fashion industry in
@@ -56,7 +55,7 @@ production may be disproportionately contributing to water scarcity.
 
 [@worldbank2023freshwater] [@worldbank2023textiles]
 
-## Our Methods
+Our Methods
 
 Data Alignment and Cleaning: We will align both datasets by Country Name
 and Year. Initial checks will be done to remove null or inconsistent
@@ -75,7 +74,7 @@ percentages.
 Identification of outliers or patterns (e.g., countries with high
 textile production but low water stress).
 
-# Exploring the Data
+# 3.Exploring the Data
 
 The two datasets we are using are from the data world bank and one shows the percentage of manufacturing focused on textile production by country and year while the other one has the same set up but looks at the water stress level each year by country.
 
@@ -161,7 +160,7 @@ textiles_long %>%
 cat("Missing Water Stress values:", sum(is.na(water_long$WaterStress)), "\n")
 cat("Missing Textile Manufacturing values:", sum(is.na(textiles_long$TextileValue)), "\n")
 ```
-#  Preliminary Methods and Planning
+# 4. Preliminary Methods and Planning
 
 To explore the connection between fast fashion and water stress, we’re starting with exploratory data analysis and some basic statistics to help us understand the patterns in both datasets.
 Planned Methods
