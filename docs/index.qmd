@@ -1,5 +1,5 @@
 ---
-title: Lab 7 Final Project - Intro/Methods Draft
+title: "Wasting Water for Wardrobes: Analyzing Water Stress and Textile Manufacturing in Fast Fashion"
 authors:
   - name: Kelbi Hall
     affiliation: Colorado State University 
@@ -9,143 +9,87 @@ authors:
     affiliation: Colorado State University
     roles: writing
     corresponding: false
-  - name: Gabriela Valdez
-    affiliation: Colorado State University
-    roles: writing
-    corresponding: false
 bibliography: references.bib
 editor: 
   markdown: 
     wrap: 72
 ---
 
-# 1. Title: Wasting Water for Wardrobes: Analyzing Water Stress and Textile Manufacturing in Fast Fashion
 
-# 2. Introduction, Background, and Motivation
-The fast fashion industry is among the most polluting in the world, contributing approximately 8% of total global carbon emissions and consuming 20% of all global wastewater—about 79 trillion liters (Bailey et al., 2022). As demand grows, many companies outsource production to low- and middle-income countries due to cheaper labor and manufacturing costs, which in turn drives down prices and boosts consumer appeal. According to The Environmental Impacts of Fast Fashion on Water Quality, brands today release twice as many collections as they did before the 2000s. With lower quality and cost, garments are consumed and discarded more rapidly, accelerating water usage and waste (Bailey et al., 2022).
-Chemical use in textile production also poses significant environmental threats. Pesticides used in cotton farming lead to runoff that introduces excessive nutrients into waterways, resulting in dead zones caused by algal blooms. Additionally, fabric dyeing processes account for 17–20% of industrial water pollution globally due to the release of hazardous chemicals (Bildirici et al., 2024).
-According to the World Trade Organization’s 2022 analysis, China is the largest global textile exporter, accounting for 31.7% of exports. Bangladesh and India follow with 7.9% and 3.1% respectively (Bildirici et al., 2024). This project focuses on water-stressed areas in these three major textile-producing countries.
-China, with 20% of the world’s population, has access to only 6% of global freshwater. Uneven distribution and widespread pollution have caused severe water scarcity in many regions (Leung, 2023). India holds 18% of the world’s population but only 4% of freshwater resources. Poor water sanitation practices leave 600 million people without reliable access to usable water (World Bank, 2023). Although Bangladesh has access to 3% of the world’s freshwater and accounts for just 2% of the global population, only 40% of its population has access to safe water. Cotton production places immense stress on freshwater availability, as growing just one pair of jeans requires 7,500–10,000 liters of water—the equivalent of what one person would drink over seven years (Bildirici et al., 2024).
+# Introduction
+
+The fast fashion industry is among the most polluting in the world,
+contributing approximately 8% of total global carbon emissions and
+consuming 20% of all global wastewater—about 79 trillion liters (Bailey
+et al., 2022). As demand grows, many companies outsource production to
+low- and middle-income countries due to cheaper labor and manufacturing
+costs, which in turn drives down prices and boosts consumer appeal.
+According to The Environmental Impacts of Fast Fashion on Water Quality,
+brands today release twice as many collections as they did before the
+2000s. With lower quality and cost, garments are consumed and discarded
+more rapidly, accelerating water usage and waste (Bailey et al., 2022).
+Chemical use in textile production also poses significant environmental
+threats. Pesticides used in cotton farming lead to runoff that
+introduces excessive nutrients into waterways, resulting in dead zones
+caused by algal blooms. Additionally, fabric dyeing processes account
+for 17–20% of industrial water pollution globally due to the release of
+hazardous chemicals (Bildirici et al., 2024). According to the World
+Trade Organization’s 2022 analysis, China is the largest global textile
+exporter, accounting for 31.7% of exports. Bangladesh and India follow
+with 7.9% and 3.1% respectively (Bildirici et al., 2024). This project
+focuses on water-stressed areas in these three major textile-producing
+countries. China, with 20% of the world’s population, has access to only
+6% of global freshwater. Uneven distribution and widespread pollution
+have caused severe water scarcity in many regions (Leung, 2023). India
+holds 18% of the world’s population but only 4% of freshwater resources.
+Poor water sanitation practices leave 600 million people without
+reliable access to usable water (World Bank, 2023). Although Bangladesh
+has access to 3% of the world’s freshwater and accounts for just 2% of
+the global population, only 40% of its population has access to safe
+water. Cotton production places immense stress on freshwater
+availability, as growing just one pair of jeans requires 7,500–10,000
+liters of water—the equivalent of what one person would drink over seven
+years (Bildirici et al., 2024).
+
+Our main focus in this project is to bring into light the realities of
+neglectful consumption of water from the fast fashion industry in
+already resource scarce countries. 
 
 [@w14071073] [@su17010069] [@leung2023china] [@worldbank2022india]
 [@worldbank2023freshwater] [@worldbank2023textiles]
 
-Our Data 
 
-Our main focus in this project is to bring into light the realities of
-neglectful consumption of water from the fast fashion industry in
-already resource scarce countries. This study draws on two key datasets:
+# Data/ Materials 
 
-Water Stress Dataset (FAO/AQUASTAT) Indicator: ER.H2O.FWST.ZS This
-dataset reflects the level of water stress in each country, defined as
-the ratio of total freshwater withdrawn to total renewable freshwater
-resources, expressed as a percentage. Higher values indicate greater
-pressure on a country's freshwater supply.
+This project used two datasets from the World Bank Open Data portal.
 
-Textile Manufacturing Dataset (World Bank) Indicator: NV.MNF.TXTL.ZS.UN
-This data presents the textile industry's value added as a percentage of
-total manufacturing output in each country, across multiple years. It
-provides a proxy for understanding the relative importance of the
-textile sector within a country’s economy.
+The first, “Freshwater withdrawals as a proportion of available freshwater resources” [@worldbank2023freshwater]
+reports national water stress levels as the percentage of renewable freshwater resources withdrawn each year. 
 
-By aligning these datasets by country and year, we can evaluate
-correlations between water stress and the proportion of manufacturing
-focused on textiles. This will help identify countries where textile
-production may be disproportionately contributing to water scarcity.
+The second dataset, “Textile manufacturing, value added (% of manufacturing)”[@worldbank2023textiles], measures the proportion of total manufacturing value attributed to the textile industry by country and year.
 
-[@worldbank2023freshwater] [@worldbank2023textiles]
+Both datasets were downloaded as Excel files and imported into R. The data were reshaped from wide to long format using the pivot_longer() function and then merged by Country Name, Country Code, and Year. We removed rows with missing values as needed and converted the Year column to numeric. No values were filled in or estimated during this process. For some visualizations, we filtered out countries with water stress values above 300 percent to minimize the influence of extreme outliers.
 
-Our Methods
-
-Data Alignment and Cleaning: We will align both datasets by Country Name
-and Year. Initial checks will be done to remove null or inconsistent
-values. Data will be filtered to include only countries with at least 10
-years of overlapping data for both indicators.
-
-Exploratory Data Analysis (EDA):
-
-Time series visualization of water stress and textile production for
-high-output countries (e.g., India, Bangladesh, China).
-
-Correlation matrix and scatterplots to assess the strength and nature of
-the relationship between water stress and textile manufacturing
-percentages.
-
-Identification of outliers or patterns (e.g., countries with high
-textile production but low water stress).
-
-# 3.Exploring the Data
-
-The two datasets we are using are from the data world bank and one shows the percentage of manufacturing focused on textile production by country and year while the other one has the same set up but looks at the water stress level each year by country.
-
-1. Water Stress Dataset
-Source:
- World Bank Open Data – Freshwater withdrawals as a proportion of available freshwater resources (ER.H2O.FWST.ZS)
- https://data.worldbank.org/indicator/ER.H2O.FWST.ZS
-Description:
- This dataset tracks national water stress levels by measuring the percentage of renewable freshwater resources that are withdrawn each year. It is commonly used to evaluate a country's overall water scarcity risk. Higher percentages indicate more severe water stress and can be caused by industrial, agricultural, or domestic water demand. The data is reported annually by country.
-Columns (after reshaping):
-Country Name: Name of the country
-
-
-Country Code: ISO 3-letter country code
-
-
-Year: Year of the measurement
-
-
-WaterStress: Percentage of total renewable freshwater resources withdrawn
-
-2. Textile Manufacturing Dataset
-Source:
- World Bank Open Data – Textile manufacturing, value added (% of manufacturing) (NV.MNF.TXTL.ZS.UN)
- https://data.worldbank.org/indicator/NV.MNF.TXTL.ZS.UN
-Description:
- This dataset captures the contribution of the textile industry to each country's total manufacturing output, expressed as a percentage. It reflects the economic weight of textile manufacturing, including garment production, fabric treatment, and fiber processing. Countries with large fast fashion supply chains typically have a higher percentage in this metric.
-Columns (after reshaping):
-Country Name: Name of the country
-
-
-Country Code: ISO 3-letter country code
-
-
-Year: Year of the observation
-
-
-TextileValue: Percentage of total manufacturing value from textiles
+# Methods
 
 ```{r}
-# Load packages
 library(tidyverse)
 library(readxl)
 
-# Read Excel files from data/ folder
 water <- read_excel("data/API_ER.H2O.FWST.ZS_DS2_en_excel_v2_14076.xls", skip = 3)
 textiles <- read_excel("data/API_NV.MNF.TXTL.ZS.UN_DS2_en_excel_v2_26490.xls", skip = 3)
 
-# Reshape to long format (match all 4-digit year columns)
 water_long <- water %>%
-  pivot_longer(cols = matches("^\\d{4}$"),
-               names_to = "Year", values_to = "WaterStress") %>%
+  pivot_longer(cols = matches("^\\d{4}$"), names_to = "Year", values_to = "WaterStress") %>%
   select(`Country Name`, `Country Code`, Year, WaterStress)
 
 textiles_long <- textiles %>%
-  pivot_longer(cols = matches("^\\d{4}$"),
-               names_to = "Year", values_to = "TextileValue") %>%
+  pivot_longer(cols = matches("^\\d{4}$"), names_to = "Year", values_to = "TextileValue") %>%
   select(`Country Name`, `Country Code`, Year, TextileValue)
 
-# Merge datasets by country and year
-combined <- left_join(water_long, textiles_long, by = c("Country Name", "Country Code", "Year"))
+combined <- left_join(water_long, textiles_long, by = c("Country Name", "Country Code", "Year")) %>%
+  mutate(Year = as.numeric(Year))
 
-# Convert year to numeric
-combined$Year <- as.numeric(combined$Year)
-```
-
-```{r}
-# Preview the water stress data
-water_long %>%
-  filter(!is.na(WaterStress)) %>%
-  head(10)
 ```
 
 ```{r}
@@ -160,19 +104,268 @@ textiles_long %>%
 cat("Missing Water Stress values:", sum(is.na(water_long$WaterStress)), "\n")
 cat("Missing Textile Manufacturing values:", sum(is.na(textiles_long$TextileValue)), "\n")
 ```
-# 4. Preliminary Methods and Planning
 
-To explore the connection between fast fashion and water stress, we’re starting with exploratory data analysis and some basic statistics to help us understand the patterns in both datasets.
-Planned Methods
-We plan to use time series plots to look at water stress and textile manufacturing over time, especially in countries like India, China, and Bangladesh where textile output is high. We’ll also create scatterplots and run simple correlation tests to see if there’s a relationship between the two variables across countries and years. If the data supports it, we might use grouped summaries or rankings to highlight countries facing both high water stress and high textile manufacturing percentages.
-Later on, if it makes sense, we may try a simple linear regression to see how well textile output predicts water stress.
-Do We Have Everything We Need
-Right now, we’re working with two solid datasets that give us a national-level view of water stress and textile manufacturing. This gives us a strong starting point, but we’re also interested in bringing in a third dataset that shows the number of fast fashion companies operating in each country. That would help us connect the environmental side of the story with the actual industry presence and possibly strengthen our analysis.
-Challenges in the Data
-One challenge is missing values. Some countries have incomplete records or gaps for certain years, which could limit how many data points we can actually use. Another challenge is scale. Both datasets are national-level, so we’re not capturing what’s happening at the regional level where production and water use might be more concentrated. Lastly, some countries may define or report textile manufacturing a little differently, which could affect consistency.
-Challenges in the Methods
-Even if we find a strong correlation, it won’t mean that one variable is directly causing the other. There could be other factors at play like agriculture, urbanization, or climate that influence water stress. Also, if we decide to use more advanced methods like regression, we’ll need to make sure our data is complete enough and that we’re not oversimplifying complex issues.
-Why These Methods Fit Our Goals
-The methods we’ve outlined help us start answering our main question by identifying patterns that connect fast fashion production with water use. By looking at changes over time and comparing countries, we can begin to understand where this relationship is the strongest. This approach allows us to stay rooted in real-world data while setting the stage for deeper insights and possible solutions later on.
+2018 Scatter plot
 
+```{r}
+# Filter 2018 data
+scatter_data_2018_filtered <- combined %>%
+  filter(Year == 2018, !is.na(WaterStress), !is.na(TextileValue), WaterStress < 300)
 
+# Top 3 countries by composite score (TextileValue * WaterStress)
+top_countries_2018 <- scatter_data_2018_filtered %>%
+  mutate(score = TextileValue * WaterStress) %>%
+  arrange(desc(score)) %>%
+  slice(1:3)
+
+# Scatterplot
+ggplot(scatter_data_2018_filtered, aes(x = TextileValue, y = WaterStress)) +
+  geom_point(alpha = 0.6) +
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +
+  geom_text(data = top_countries_2018, aes(label = `Country Name`), vjust = -1, hjust = 1.1, size = 3, color = "red") +
+  geom_text(data = filter(scatter_data_2018_filtered, `Country Name` %in% c("China", "India", "Bangladesh")),
+            aes(label = `Country Name`), vjust = 1.5, hjust = -0.1, size = 3) +
+  labs(title = "Water Stress vs Textile Manufacturing (2018, Filtered)",
+       x = "Textile Manufacturing (% of total manufacturing)",
+       y = "Water Stress (% of renewable resources)") +
+  theme_minimal()
+
+```
+
+The 2018 scatterplot shows that countries with the highest combination
+of textile output and water stress (Egypt, Uzbekistan, Sri Lanka) are
+not the same as global fast fashion leaders like China, India, and
+Bangladesh. This suggests that textile manufacturing is not 
+
+Time Series Plot
+
+```{r}
+time_series_data <- combined %>%
+  filter(`Country Name` %in% c("India", "China", "Bangladesh"), !is.na(WaterStress), !is.na(TextileValue))
+
+ggplot(time_series_data, aes(x = Year)) +
+  geom_line(aes(y = WaterStress, color = "Water Stress"), linetype = "solid") +
+  geom_line(aes(y = TextileValue, color = "Textile Manufacturing"), linetype = "dashed") +
+  facet_wrap(~ `Country Name`) +
+  labs(title = "Water Stress and Textile Manufacturing Over Time by Country",
+       y = "Percentage",
+       x = "Year",
+       color = "Indicator") +
+  theme_minimal()
+```
+
+Correlation Tests
+
+```{r}
+# India correlation
+india_data <- combined %>% filter(`Country Name` == "India", !is.na(WaterStress), !is.na(TextileValue))
+cor.test(india_data$TextileValue, india_data$WaterStress)
+
+# China correlation
+china_data <- combined %>% filter(`Country Name` == "China", !is.na(WaterStress), !is.na(TextileValue))
+cor.test(china_data$TextileValue, china_data$WaterStress)
+
+# Bangladesh correlation
+bangladesh_data <- combined %>% filter(`Country Name` == "Bangladesh", !is.na(WaterStress), !is.na(TextileValue))
+
+```
+
+Top 5 Countries by Average Textile Output and Water Stress
+
+```{r}
+
+country_averages <- combined %>%
+  group_by(`Country Name`) %>%
+  summarize(avg_textile = mean(TextileValue, na.rm = TRUE),
+            avg_water_stress = mean(WaterStress, na.rm = TRUE)) %>%
+  ungroup()
+
+top_textile <- country_averages %>% arrange(desc(avg_textile)) %>% slice(1:5)
+
+top_water_stress <- country_averages %>% arrange(desc(avg_water_stress)) %>% slice(1:5)
+
+top_textile
+top_water_stress
+
+```
+
+Global Correlation Test
+
+```{r}
+global_corr_data <- combined %>% filter(!is.na(WaterStress), !is.na(TextileValue))
+cor.test(global_corr_data$TextileValue, global_corr_data$WaterStress)
+
+```
+
+# Discussion
+
+This study aimed to examine the relationship between textile
+manufacturing and water stress across countries, focusing particularly
+on India, China, and Bangladesh—nations commonly associated with fast
+fashion production. The hypothesis was that higher textile output would
+correlate with higher water stress at the national level due to the
+water-intensive nature of cotton farming, textile dyeing, and fabric
+production. However, the results of this analysis reveal a much more
+complex relationship, with textile output alone not consistently
+explaining national water stress patterns.
+
+The scatterplot analysis for 2018, after filtering extreme water stress
+outliers (above 300%), highlighted that Egypt, Uzbekistan, and Sri Lanka
+had the highest combined textile output and water stress, while China,
+India, and Bangladesh—although top textile producers—did not exhibit the
+highest water stress levels. This finding challenges the assumption that
+fast fashion-heavy nations automatically face higher water pressures.
+
+This outcome underscores that water stress is influenced by multiple
+factors beyond textile manufacturing. For instance,
+agriculture—particularly water-intensive crops—often consumes far more
+water than industry. Climate variability, population growth,
+urbanization, and government water policies all contribute to water
+demand and scarcity. The case of Bangladesh illustrates this well.
+Despite being a global leader in textile exports, Bangladesh maintains
+relatively low water stress (5.7% average), while other textile
+producers like Syria and Pakistan experience high water stress (above
+100%), withdrawing freshwater at or beyond renewable levels.
+
+The time series analysis for India, China, and Bangladesh provided
+additional insight. India’s water stress has steadily increased over
+time, despite a decline in textile manufacturing output. This suggests
+that agriculture, particularly rice and sugarcane production, along with
+urban water demands and climate-related shortages, are likely driving
+water stress in India. China’s water stress remained relatively stable,
+even as textile output decreased gradually. Bangladesh showed limited
+data, but available trends suggested low water stress relative to its
+textile manufacturing levels.
+
+These trends were further reinforced by correlation analyses. India and
+China both exhibited strong negative correlations between textile
+manufacturing and water stress (India: r = -0.97, China: r = -0.96, both
+p \< 0.001). This means that as textile output declined, water stress
+increased in both countries. While counterintuitive, these results align
+with the time series findings, suggesting that other sectors or broader
+environmental changes—such as urbanization or climate factors—are
+driving national water pressures more than textile output.
+
+For Bangladesh, the correlation test could not be performed due to
+limited overlapping data between the two variables. This reflects one of
+the challenges in working with global datasets—inconsistent data
+availability across countries and years. Even though Bangladesh is a
+major textile producer, its water stress patterns could not be fully
+assessed due to gaps in reporting.
+
+Expanding the scope to a global analysis, a correlation test across all
+countries and years produced a very weak negative correlation (r =
+-0.08, p \< 0.001) between textile manufacturing and water stress. While
+statistically significant because of the large sample size, the
+relationship is practically negligible, suggesting that globally,
+textile output is not a reliable predictor of water stress. This
+supports the idea that local factors, such as climate, agricultural
+practices, and water policies, heavily influence national water
+conditions.
+
+To further explore this relationship, the study examined the top five
+countries by average textile manufacturing output and average water
+stress. Among the top textile producers were Macao SAR (China),
+Bangladesh, Syria, Cambodia, and Pakistan. These countries had varying
+levels of water stress, with Bangladesh maintaining low water stress and
+Syria and Pakistan experiencing high water stress (above 100%).
+
+Conversely, the top five water-stressed countries—Kuwait, United Arab
+Emirates, Saudi Arabia, Libya, and Qatar—are predominantly arid nations
+with extremely high water stress levels (ranging from 358% to 2612%).
+However, these countries reported low textile manufacturing output
+(below 6.5%). This contrast demonstrates that water scarcity in these
+regions is likely driven by climate conditions and urban/agricultural
+demands, rather than textile production.
+
+These findings align with previous research emphasizing the need for
+context-specific analyses when addressing water stress. For example,
+countries like India and China may face water shortages driven by
+agriculture, urban expansion, and climate variability, whereas Middle
+Eastern nations contend with naturally scarce water supplies.
+
+This study challenges the narrative that fast fashion alone is a primary
+contributor to water stress. While textile manufacturing certainly has a
+significant environmental footprint, the data shows that other sectors,
+particularly agriculture, often exert greater pressure on water
+resources. Water stress is a multifaceted issue, influenced by sectoral
+water demands, regional climates, technological efficiencies, and policy
+decisions.
+
+The analysis also highlighted data limitations, particularly with
+Bangladesh, where incomplete records prevented a full correlation
+analysis. This reflects a broader challenge with global environmental
+datasets: inconsistent data collection and reporting. Reliable,
+comprehensive data is crucial for accurate assessments of global
+resource use patterns. Improvements in data standardization and
+reporting are essential for advancing research and informing water
+management strategies.
+
+Despite these limitations, this study offers valuable insights into the
+complex relationship between industrial production and water scarcity.
+While textile manufacturing is often targeted in sustainability
+conversations, this research suggests the need for multi-sectoral
+approaches to water management, taking into account agriculture, urban
+growth, industrial practices, and climate adaptation.
+
+Future research could expand on these findings by incorporating regional
+or watershed-level data to assess localized water stress. Additionally,
+integrating water quality data—particularly related to pollution from
+textile dyeing processes—could provide a more comprehensive picture of
+the fast fashion industry’s water impacts. Supply chain analyses could
+also help trace water usage and pollution footprints across different
+stages of textile production, offering a more granular understanding of
+the industry’s true water footprint.
+
+In summary, this study contributes to a growing body of research
+emphasizing that global environmental issues cannot be reduced to
+single-sector explanations. Textile manufacturing is an important part
+of the conversation, but water stress must be understood within a
+broader socio-environmental context that considers multiple drivers,
+including agriculture, climate, and population dynamics.
+
+# Conclusion
+
+This study set out to explore the relationship between textile
+manufacturing and water stress across countries, focusing on major fast
+fashion producers such as India, China, and Bangladesh. While textile
+production is known for its high water consumption and pollution
+potential, the analysis revealed that it is not a consistent driver of
+national water stress. Both the scatterplot and time series analyses,
+along with correlation tests, showed that water stress levels do not
+reliably correlate with textile manufacturing output.
+
+In India and China, strong negative correlations indicated that water
+stress has increased even as textile manufacturing output declined,
+suggesting that other sectors, particularly agriculture and urban
+development, play larger roles in shaping national water pressures. At
+the global level, a very weak negative correlation further emphasized
+that textile output alone is not a reliable predictor of water stress.
+
+The top textile-producing countries and the top water-stressed nations
+were largely distinct, reinforcing that regional factors such as
+climate, resource management, and sectoral water use have greater
+influence on water scarcity.
+
+These findings highlight the complexity of water resource management and
+suggest that addressing global water stress requires a multi-sectoral
+approach, focusing not only on industrial output, but also on
+agriculture, urbanization, and climate adaptation strategies. While
+textile production remains a key area for sustainability improvements,
+including reducing water pollution from dyeing and improving water
+efficiency, it should be understood as part of a broader system of water
+use.
+
+Moving forward, improving data completeness and consistency across
+countries will be critical to fully understanding global water stress
+patterns. Future research should also explore regional water stress
+dynamics, supply chain impacts, and water quality to build a more
+comprehensive view of the fast fashion industry’s environmental
+footprint.
+
+In conclusion, while fast fashion remains a significant environmental
+concern, this study emphasizes that water stress is a multi-dimensional
+challenge requiring holistic solutions. Sustainable water management
+will depend on integrating sectoral demands, addressing local contexts,
+and collaborating across industries to ensure that water resources are
+protected for both current and future generations.
