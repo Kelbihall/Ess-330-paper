@@ -285,6 +285,7 @@
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
+<p>To examine the relationship between textile manufacturing and water stress, we used a mix of visual analyses and statistical tests that allowed us to explore patterns across countries and over time. We started with scatterplots to visually assess whether countries with higher textile output also experienced higher water stress, focusing on the year 2018 for a clearer snapshot. Filtering out extreme water stress values helped ensure that most countries were visible and not overshadowed by outliers. We highlighted key countries, including top combined offenders and major textile producers, to compare expected and actual results. To understand how these trends changed over time, we used time series visualizations for India, China, and Bangladesh. This helped us explore whether shifts in textile output aligned with changes in water stress. Pearson correlation tests were then applied to measure the strength of the relationship between textile manufacturing and water stress in these countries, offering a statistical complement to the visual trends. A global correlation test across all countries and years was also conducted to see if any broader relationship existed. Lastly, we summarized average textile output and water stress levels to identify the top five countries in each category, which provided context for our findings and helped compare global patterns. Together, these methods allowed us to explore the data from multiple angles and strengthen our analysis.</p>
 <div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -381,7 +382,6 @@
 </div>
 </div>
 </div></div>
-<p>The 2018 scatterplot shows that countries with the highest combination of textile output and water stress (Egypt, Uzbekistan, Sri Lanka) are not the same as global fast fashion leaders like China, India, and Bangladesh. This suggests that textile manufacturing is not</p>
 <p>Time Series Plot</p>
 <div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>time_series_data <span class="ot">&lt;-</span> combined <span class="sc">%&gt;%</span></span>
