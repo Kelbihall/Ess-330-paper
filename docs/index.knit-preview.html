@@ -185,26 +185,15 @@
     document.body.classList.add('hypothesis-enabled');
   });
 </script>  
-      <meta name="citation_title" content="Wasting Water for Wardrobes: Analyzing Water Stress and Textile Manufacturing in Fast Fashion">
-<meta name="citation_author" content="Kelbi Hall">
-<meta name="citation_author" content="Chloe Rogozinski">
-<meta name="citation_language" content="en">
-<meta name="citation_reference" content="citation_title=The environmental impacts of fast fashion on water quality: A systematic review;,citation_author=K. Bailey;,citation_author=A. Basu;,citation_author=S. Sharma;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_issue=7;,citation_doi=10.3390/w14071073;,citation_volume=14;,citation_journal_title=Water (Basel);">
-<meta name="citation_reference" content="citation_title=Unraveling the environmental impacts of the fashion industry: A fourier-based analysis of pollution dynamics and causality across five countries;,citation_author=M. Bildirici;,citation_author=I. Türkkahraman;,citation_author=Ö. Ö. Ersin;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_issue=1;,citation_doi=10.3390/su17010069;,citation_volume=17;,citation_journal_title=Sustainability;">
-<meta name="citation_reference" content="citation_title=Tackling china’s water shortage crisis;,citation_author=K. C. Leung;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url=https://earth.org/tackling-chinas-water-shortage-crisis/;">
-<meta name="citation_reference" content="citation_title=How is india addressing its water needs?;,citation_author=World Bank;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_fulltext_html_url=https://www.worldbank.org/en/country/india/brief/world-water-day-2022-how-india-is-addressing-its-water-needs;">
-<meta name="citation_reference" content="citation_title=Freshwater withdrawal as % of internal resources (ER.H2O.FWST.ZS);,citation_author=World Bank;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url=https://data.worldbank.org/indicator/ER.H2O.FWST.ZS;">
-<meta name="citation_reference" content="citation_title=Textiles and clothing, value added (% of manufacturing) (NV.MNF.TXTL.ZS.UN);,citation_author=World Bank;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url=https://data.worldbank.org/indicator/NV.MNF.TXTL.ZS.UN;">
-<meta name="citation_reference" content="citation_title=Water pollution and the textile industry in bangladesh: Flawed corporate practices or restrictive opportunities?;,citation_author=Maiko Sakamoto;,citation_author=Tofayel Ahamed;,citation_author=Salma Begum;,citation_author=Hamidul Huq;,citation_publication_date=2019-04;,citation_cover_date=2019-04;,citation_year=2019;,citation_doi=10.3390/su11071951;,citation_volume=11;,citation_journal_title=Sustainability;">
-</head>
+      </head>
 
   <body class="quarto-notebook">
     <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
       
       <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
-      <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
+      <h6><i class="bi bi-journal-code"></i> Wasting Water for Wardrobes: Analyzing Water Stress and Textile Manufacturing in Fast Fashion</h6>
 
-            <a href="./index.qmd" class="btn btn-primary quarto-download-embed" download="index.qmd">Download Source</a>
+            <a href="./index.knit.md" class="btn btn-primary quarto-download-embed" download="index.knit.md">Download Notebook</a>
           </div>
 
      <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
@@ -1102,364 +1091,585 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a><span class="co">    wrap: 72</span></span>
 <span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-33"><a href="#cb24-33" aria-hidden="true" tabindex="-1"></a>The fast fashion industry is among the most polluting in the world,</span>
-<span id="cb24-34"><a href="#cb24-34" aria-hidden="true" tabindex="-1"></a>contributing approximately 8% of total global carbon emissions and</span>
-<span id="cb24-35"><a href="#cb24-35" aria-hidden="true" tabindex="-1"></a>consuming 20% of all global wastewater about 79 trillion liters (Bailey</span>
-<span id="cb24-36"><a href="#cb24-36" aria-hidden="true" tabindex="-1"></a>et al., 2022). As demand grows, many companies outsource production to</span>
-<span id="cb24-37"><a href="#cb24-37" aria-hidden="true" tabindex="-1"></a>low- and middle-income countries due to cheaper labor and manufacturing</span>
-<span id="cb24-38"><a href="#cb24-38" aria-hidden="true" tabindex="-1"></a>costs, which in turn drives down prices and boosts consumer appeal.</span>
-<span id="cb24-39"><a href="#cb24-39" aria-hidden="true" tabindex="-1"></a>According to The Environmental Impacts of Fast Fashion on Water Quality,</span>
-<span id="cb24-40"><a href="#cb24-40" aria-hidden="true" tabindex="-1"></a>brands today release twice as many collections as they did before the</span>
-<span id="cb24-41"><a href="#cb24-41" aria-hidden="true" tabindex="-1"></a>2000s. With lower quality and cost, garments are consumed and discarded</span>
-<span id="cb24-42"><a href="#cb24-42" aria-hidden="true" tabindex="-1"></a>more rapidly, accelerating water usage and waste (Bailey et al., 2022).</span>
-<span id="cb24-43"><a href="#cb24-43" aria-hidden="true" tabindex="-1"></a>Chemical use in textile production also poses significant environmental</span>
-<span id="cb24-44"><a href="#cb24-44" aria-hidden="true" tabindex="-1"></a>threats. Pesticides used in cotton farming lead to runoff that</span>
-<span id="cb24-45"><a href="#cb24-45" aria-hidden="true" tabindex="-1"></a>introduces excessive nutrients into waterways, resulting in dead zones</span>
-<span id="cb24-46"><a href="#cb24-46" aria-hidden="true" tabindex="-1"></a>caused by algal blooms. Additionally, fabric dyeing processes account</span>
-<span id="cb24-47"><a href="#cb24-47" aria-hidden="true" tabindex="-1"></a>for 17–20% of industrial water pollution globally due to the release of</span>
-<span id="cb24-48"><a href="#cb24-48" aria-hidden="true" tabindex="-1"></a>hazardous chemicals (Bildirici et al., 2024). According to the World</span>
-<span id="cb24-49"><a href="#cb24-49" aria-hidden="true" tabindex="-1"></a>Trade Organization’s 2022 analysis, China is the largest global textile</span>
-<span id="cb24-50"><a href="#cb24-50" aria-hidden="true" tabindex="-1"></a>exporter, accounting for 31.7% of exports. Bangladesh and India follow</span>
-<span id="cb24-51"><a href="#cb24-51" aria-hidden="true" tabindex="-1"></a>with 7.9% and 3.1% respectively (Bildirici et al., 2024). This project</span>
-<span id="cb24-52"><a href="#cb24-52" aria-hidden="true" tabindex="-1"></a>focuses on water-stressed areas in these three major textile-producing</span>
-<span id="cb24-53"><a href="#cb24-53" aria-hidden="true" tabindex="-1"></a>countries. China, with 20% of the world’s population, has access to only</span>
-<span id="cb24-54"><a href="#cb24-54" aria-hidden="true" tabindex="-1"></a>6% of global freshwater. Uneven distribution and widespread pollution</span>
-<span id="cb24-55"><a href="#cb24-55" aria-hidden="true" tabindex="-1"></a>have caused severe water scarcity in many regions (Leung, 2023). India</span>
-<span id="cb24-56"><a href="#cb24-56" aria-hidden="true" tabindex="-1"></a>holds 18% of the world’s population but only 4% of freshwater resources.</span>
-<span id="cb24-57"><a href="#cb24-57" aria-hidden="true" tabindex="-1"></a>Poor water sanitation practices leave 600 million people without</span>
-<span id="cb24-58"><a href="#cb24-58" aria-hidden="true" tabindex="-1"></a>reliable access to usable water (World Bank, 2023). Although Bangladesh</span>
-<span id="cb24-59"><a href="#cb24-59" aria-hidden="true" tabindex="-1"></a>has access to 3% of the world’s freshwater and accounts for just 2% of</span>
-<span id="cb24-60"><a href="#cb24-60" aria-hidden="true" tabindex="-1"></a>the global population, only 40% of its population has access to safe</span>
-<span id="cb24-61"><a href="#cb24-61" aria-hidden="true" tabindex="-1"></a>water. Cotton production places immense stress on freshwater</span>
-<span id="cb24-62"><a href="#cb24-62" aria-hidden="true" tabindex="-1"></a>availability, as growing just one pair of jeans requires 7,500–10,000</span>
-<span id="cb24-63"><a href="#cb24-63" aria-hidden="true" tabindex="-1"></a>liters of water—the equivalent of what one person would drink over seven</span>
-<span id="cb24-64"><a href="#cb24-64" aria-hidden="true" tabindex="-1"></a>years (Bildirici et al., 2024).</span>
-<span id="cb24-65"><a href="#cb24-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-66"><a href="#cb24-66" aria-hidden="true" tabindex="-1"></a>Our main focus in this project is to bring into light the realities of</span>
-<span id="cb24-67"><a href="#cb24-67" aria-hidden="true" tabindex="-1"></a>neglectful consumption of water from the fast fashion industry in</span>
-<span id="cb24-68"><a href="#cb24-68" aria-hidden="true" tabindex="-1"></a>already resource scarce countries. </span>
-<span id="cb24-69"><a href="#cb24-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-70"><a href="#cb24-70" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@w14071073</span><span class="co">] [@su17010069]</span> <span class="co">[</span><span class="ot">@leung2023china</span><span class="co">] [@worldbank2022india]</span></span>
-<span id="cb24-71"><a href="#cb24-71" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@worldbank2023freshwater</span><span class="co">] [@worldbank2023textiles]</span></span>
-<span id="cb24-72"><a href="#cb24-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-73"><a href="#cb24-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-74"><a href="#cb24-74" aria-hidden="true" tabindex="-1"></a><span class="fu"># Data/ Materials </span></span>
+<span id="cb24-33"><a href="#cb24-33" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
+<span id="cb24-34"><a href="#cb24-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-35"><a href="#cb24-35" aria-hidden="true" tabindex="-1"></a>The fast fashion industry is among the most polluting in the world,</span>
+<span id="cb24-36"><a href="#cb24-36" aria-hidden="true" tabindex="-1"></a>contributing approximately 8% of total global carbon emissions and</span>
+<span id="cb24-37"><a href="#cb24-37" aria-hidden="true" tabindex="-1"></a>consuming 20% of all global wastewater about 79 trillion liters (Bailey</span>
+<span id="cb24-38"><a href="#cb24-38" aria-hidden="true" tabindex="-1"></a>et al., 2022). As demand grows, many companies outsource production to</span>
+<span id="cb24-39"><a href="#cb24-39" aria-hidden="true" tabindex="-1"></a>low- and middle-income countries due to cheaper labor and manufacturing</span>
+<span id="cb24-40"><a href="#cb24-40" aria-hidden="true" tabindex="-1"></a>costs, which in turn drives down prices and boosts consumer appeal.</span>
+<span id="cb24-41"><a href="#cb24-41" aria-hidden="true" tabindex="-1"></a>According to The Environmental Impacts of Fast Fashion on Water Quality,</span>
+<span id="cb24-42"><a href="#cb24-42" aria-hidden="true" tabindex="-1"></a>brands today release twice as many collections as they did before the</span>
+<span id="cb24-43"><a href="#cb24-43" aria-hidden="true" tabindex="-1"></a>2000s. With lower quality and cost, garments are consumed and discarded</span>
+<span id="cb24-44"><a href="#cb24-44" aria-hidden="true" tabindex="-1"></a>more rapidly, accelerating water usage and waste (Bailey et al., 2022).</span>
+<span id="cb24-45"><a href="#cb24-45" aria-hidden="true" tabindex="-1"></a>Chemical use in textile production also poses significant environmental</span>
+<span id="cb24-46"><a href="#cb24-46" aria-hidden="true" tabindex="-1"></a>threats. Pesticides used in cotton farming lead to runoff that</span>
+<span id="cb24-47"><a href="#cb24-47" aria-hidden="true" tabindex="-1"></a>introduces excessive nutrients into waterways, resulting in dead zones</span>
+<span id="cb24-48"><a href="#cb24-48" aria-hidden="true" tabindex="-1"></a>caused by algal blooms. Additionally, fabric dyeing processes account</span>
+<span id="cb24-49"><a href="#cb24-49" aria-hidden="true" tabindex="-1"></a>for 17–20% of industrial water pollution globally due to the release of</span>
+<span id="cb24-50"><a href="#cb24-50" aria-hidden="true" tabindex="-1"></a>hazardous chemicals (Bildirici et al., 2024). According to the World</span>
+<span id="cb24-51"><a href="#cb24-51" aria-hidden="true" tabindex="-1"></a>Trade Organization’s 2022 analysis, China is the largest global textile</span>
+<span id="cb24-52"><a href="#cb24-52" aria-hidden="true" tabindex="-1"></a>exporter, accounting for 31.7% of exports. Bangladesh and India follow</span>
+<span id="cb24-53"><a href="#cb24-53" aria-hidden="true" tabindex="-1"></a>with 7.9% and 3.1% respectively (Bildirici et al., 2024). This project</span>
+<span id="cb24-54"><a href="#cb24-54" aria-hidden="true" tabindex="-1"></a>focuses on water-stressed areas in these three major textile-producing</span>
+<span id="cb24-55"><a href="#cb24-55" aria-hidden="true" tabindex="-1"></a>countries. China, with 20% of the world’s population, has access to only</span>
+<span id="cb24-56"><a href="#cb24-56" aria-hidden="true" tabindex="-1"></a>6% of global freshwater. Uneven distribution and widespread pollution</span>
+<span id="cb24-57"><a href="#cb24-57" aria-hidden="true" tabindex="-1"></a>have caused severe water scarcity in many regions (Leung, 2023). India</span>
+<span id="cb24-58"><a href="#cb24-58" aria-hidden="true" tabindex="-1"></a>holds 18% of the world’s population but only 4% of freshwater resources.</span>
+<span id="cb24-59"><a href="#cb24-59" aria-hidden="true" tabindex="-1"></a>Poor water sanitation practices leave 600 million people without</span>
+<span id="cb24-60"><a href="#cb24-60" aria-hidden="true" tabindex="-1"></a>reliable access to usable water (World Bank, 2023). Although Bangladesh</span>
+<span id="cb24-61"><a href="#cb24-61" aria-hidden="true" tabindex="-1"></a>has access to 3% of the world’s freshwater and accounts for just 2% of</span>
+<span id="cb24-62"><a href="#cb24-62" aria-hidden="true" tabindex="-1"></a>the global population, only 40% of its population has access to safe</span>
+<span id="cb24-63"><a href="#cb24-63" aria-hidden="true" tabindex="-1"></a>water. Cotton production places immense stress on freshwater</span>
+<span id="cb24-64"><a href="#cb24-64" aria-hidden="true" tabindex="-1"></a>availability, as growing just one pair of jeans requires 7,500–10,000</span>
+<span id="cb24-65"><a href="#cb24-65" aria-hidden="true" tabindex="-1"></a>liters of water—the equivalent of what one person would drink over seven</span>
+<span id="cb24-66"><a href="#cb24-66" aria-hidden="true" tabindex="-1"></a>years (Bildirici et al., 2024).</span>
+<span id="cb24-67"><a href="#cb24-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-68"><a href="#cb24-68" aria-hidden="true" tabindex="-1"></a>Our main focus in this project is to bring into light the realities of</span>
+<span id="cb24-69"><a href="#cb24-69" aria-hidden="true" tabindex="-1"></a>neglectful consumption of water from the fast fashion industry in</span>
+<span id="cb24-70"><a href="#cb24-70" aria-hidden="true" tabindex="-1"></a>already resource scarce countries. </span>
+<span id="cb24-71"><a href="#cb24-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-72"><a href="#cb24-72" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@w14071073</span><span class="co">] [@su17010069]</span> <span class="co">[</span><span class="ot">@leung2023china</span><span class="co">] [@worldbank2022india]</span></span>
+<span id="cb24-73"><a href="#cb24-73" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@worldbank2023freshwater</span><span class="co">] [@worldbank2023textiles]</span></span>
+<span id="cb24-74"><a href="#cb24-74" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-75"><a href="#cb24-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-76"><a href="#cb24-76" aria-hidden="true" tabindex="-1"></a>This project used two datasets from the World Bank Open Data portal.</span>
+<span id="cb24-76"><a href="#cb24-76" aria-hidden="true" tabindex="-1"></a><span class="fu"># Data/ Materials </span></span>
 <span id="cb24-77"><a href="#cb24-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-78"><a href="#cb24-78" aria-hidden="true" tabindex="-1"></a>The first, “Freshwater withdrawals as a proportion of available freshwater resources” <span class="co">[</span><span class="ot">@worldbank2023freshwater</span><span class="co">]</span></span>
-<span id="cb24-79"><a href="#cb24-79" aria-hidden="true" tabindex="-1"></a>reports national water stress levels as the percentage of renewable freshwater resources withdrawn each year. </span>
-<span id="cb24-80"><a href="#cb24-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-81"><a href="#cb24-81" aria-hidden="true" tabindex="-1"></a>The second dataset, “Textile manufacturing, value added (% of manufacturing)”<span class="co">[</span><span class="ot">@worldbank2023textiles</span><span class="co">]</span>, measures the proportion of total manufacturing value attributed to the textile industry by country and year.</span>
+<span id="cb24-78"><a href="#cb24-78" aria-hidden="true" tabindex="-1"></a>This project used two datasets from the World Bank Open Data portal.</span>
+<span id="cb24-79"><a href="#cb24-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-80"><a href="#cb24-80" aria-hidden="true" tabindex="-1"></a>The first, “Freshwater withdrawals as a proportion of available freshwater resources” <span class="co">[</span><span class="ot">@worldbank2023freshwater</span><span class="co">]</span></span>
+<span id="cb24-81"><a href="#cb24-81" aria-hidden="true" tabindex="-1"></a>reports national water stress levels as the percentage of renewable freshwater resources withdrawn each year. </span>
 <span id="cb24-82"><a href="#cb24-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-83"><a href="#cb24-83" aria-hidden="true" tabindex="-1"></a>Both datasets were downloaded as Excel files and imported into R. The data were reshaped from wide to long format using the pivot_longer() function and then merged by Country Name, Country Code, and Year. We removed rows with missing values as needed and converted the Year column to numeric. No values were filled in or estimated during this process. For some visualizations, we filtered out countries with water stress values above 300 percent to minimize the influence of extreme outliers.</span>
+<span id="cb24-83"><a href="#cb24-83" aria-hidden="true" tabindex="-1"></a>The second dataset, “Textile manufacturing, value added (% of manufacturing)”<span class="co">[</span><span class="ot">@worldbank2023textiles</span><span class="co">]</span>, measures the proportion of total manufacturing value attributed to the textile industry by country and year.</span>
 <span id="cb24-84"><a href="#cb24-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-85"><a href="#cb24-85" aria-hidden="true" tabindex="-1"></a><span class="fu"># Methods</span></span>
+<span id="cb24-85"><a href="#cb24-85" aria-hidden="true" tabindex="-1"></a>Both datasets were downloaded as Excel files and imported into R. The data were reshaped from wide to long format using the pivot_longer() function and then merged by Country Name, Country Code, and Year. We removed rows with missing values as needed and converted the Year column to numeric. No values were filled in or estimated during this process. For some visualizations, we filtered out countries with water stress values above 300 percent to minimize the influence of extreme outliers.</span>
 <span id="cb24-86"><a href="#cb24-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-87"><a href="#cb24-87" aria-hidden="true" tabindex="-1"></a>To examine the relationship between textile manufacturing and water stress, we used a mix of visual analyses and statistical tests that allowed us to explore patterns across countries and over time. We started with scatterplots to visually assess whether countries with higher textile output also experienced higher water stress, focusing on the year 2018 for a clearer snapshot. Filtering out extreme water stress values helped ensure that most countries were visible and not overshadowed by outliers. We highlighted key countries, including top combined offenders and major textile producers, to compare expected and actual results.</span>
-<span id="cb24-88"><a href="#cb24-88" aria-hidden="true" tabindex="-1"></a>To understand how these trends changed over time, we used time series visualizations for India, China, and Bangladesh. This helped us explore whether shifts in textile output aligned with changes in water stress. Pearson correlation tests were then applied to measure the strength of the relationship between textile manufacturing and water stress in these countries, offering a statistical complement to the visual trends. A global correlation test across all countries and years was also conducted to see if any broader relationship existed. Lastly, we summarized average textile output and water stress levels to identify the top five countries in each category, which provided context for our findings and helped compare global patterns. Together, these methods allowed us to explore the data from multiple angles and strengthen our analysis.</span>
-<span id="cb24-89"><a href="#cb24-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-90"><a href="#cb24-90" aria-hidden="true" tabindex="-1"></a><span class="fu"># Results</span></span>
+<span id="cb24-87"><a href="#cb24-87" aria-hidden="true" tabindex="-1"></a><span class="fu"># Methods</span></span>
+<span id="cb24-88"><a href="#cb24-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-89"><a href="#cb24-89" aria-hidden="true" tabindex="-1"></a>To examine the relationship between textile manufacturing and water stress, we used a mix of visual analyses and statistical tests that allowed us to explore patterns across countries and over time. We started with scatterplots to visually assess whether countries with higher textile output also experienced higher water stress, focusing on the year 2018 for a clearer snapshot. Filtering out extreme water stress values helped ensure that most countries were visible and not overshadowed by outliers. We highlighted key countries, including top combined offenders and major textile producers, to compare expected and actual results.</span>
+<span id="cb24-90"><a href="#cb24-90" aria-hidden="true" tabindex="-1"></a>To understand how these trends changed over time, we used time series visualizations for India, China, and Bangladesh. This helped us explore whether shifts in textile output aligned with changes in water stress. Pearson correlation tests were then applied to measure the strength of the relationship between textile manufacturing and water stress in these countries, offering a statistical complement to the visual trends. A global correlation test across all countries and years was also conducted to see if any broader relationship existed. Lastly, we summarized average textile output and water stress levels to identify the top five countries in each category, which provided context for our findings and helped compare global patterns. Together, these methods allowed us to explore the data from multiple angles and strengthen our analysis.</span>
 <span id="cb24-91"><a href="#cb24-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-92"><a href="#cb24-92" aria-hidden="true" tabindex="-1"></a>The results showed that there is not a strong or consistent relationship between textile manufacturing and water stress at the national level. In 2018, countries like Egypt, Uzbekistan, and Sri Lanka had the highest combined levels of textile output and water stress, while major fast fashion producers like India, China, and Bangladesh did not. Time series analysis revealed that in India and China, water stress increased over time even as textile manufacturing declined, suggesting other factors such as agriculture, population growth, or climate conditions are driving water scarcity. Bangladesh had high textile manufacturing and low water stress, but incomplete data for many years limits what we can conclude. Overall, correlation tests confirmed these trends, with strong negative correlations in India and China and a very weak global correlation. The top countries for textile production and those with the highest water stress were mostly different, reinforcing that water stress is likely shaped by broader environmental and economic conditions rather than textile manufacturing alone.</span>
+<span id="cb24-92"><a href="#cb24-92" aria-hidden="true" tabindex="-1"></a><span class="fu"># Results</span></span>
 <span id="cb24-93"><a href="#cb24-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-96"><a href="#cb24-96" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb24-97"><a href="#cb24-97" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb24-98"><a href="#cb24-98" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb24-99"><a href="#cb24-99" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb24-100"><a href="#cb24-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-101"><a href="#cb24-101" aria-hidden="true" tabindex="-1"></a>water <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/API_ER.H2O.FWST.ZS_DS2_en_excel_v2_14076.xls"</span>, <span class="at">skip =</span> <span class="dv">3</span>)</span>
-<span id="cb24-102"><a href="#cb24-102" aria-hidden="true" tabindex="-1"></a>textiles <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/API_NV.MNF.TXTL.ZS.UN_DS2_en_excel_v2_26490.xls"</span>, <span class="at">skip =</span> <span class="dv">3</span>)</span>
+<span id="cb24-94"><a href="#cb24-94" aria-hidden="true" tabindex="-1"></a>The results showed that there is not a strong or consistent relationship between textile manufacturing and water stress at the national level. In 2018, countries like Egypt, Uzbekistan, and Sri Lanka had the highest combined levels of textile output and water stress, while major fast fashion producers like India, China, and Bangladesh did not. Time series analysis revealed that in India and China, water stress increased over time even as textile manufacturing declined, suggesting other factors such as agriculture, population growth, or climate conditions are driving water scarcity. Bangladesh had high textile manufacturing and low water stress, but incomplete data for many years limits what we can conclude. Overall, correlation tests confirmed these trends, with strong negative correlations in India and China and a very weak global correlation. The top countries for textile production and those with the highest water stress were mostly different, reinforcing that water stress is likely shaped by broader environmental and economic conditions rather than textile manufacturing alone.</span>
+<span id="cb24-95"><a href="#cb24-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-96"><a href="#cb24-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-97"><a href="#cb24-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-98"><a href="#cb24-98" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb24-99"><a href="#cb24-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-100"><a href="#cb24-100" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-101"><a href="#cb24-101" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb24-102"><a href="#cb24-102" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb24-103"><a href="#cb24-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-104"><a href="#cb24-104" aria-hidden="true" tabindex="-1"></a>water_long <span class="ot">&lt;-</span> water <span class="sc">%&gt;%</span></span>
-<span id="cb24-105"><a href="#cb24-105" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">matches</span>(<span class="st">"^</span><span class="sc">\\</span><span class="st">d{4}$"</span>), <span class="at">names_to =</span> <span class="st">"Year"</span>, <span class="at">values_to =</span> <span class="st">"WaterStress"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb24-106"><a href="#cb24-106" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="st">`</span><span class="at">Country Name</span><span class="st">`</span>, <span class="st">`</span><span class="at">Country Code</span><span class="st">`</span>, Year, WaterStress)</span>
-<span id="cb24-107"><a href="#cb24-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-108"><a href="#cb24-108" aria-hidden="true" tabindex="-1"></a>textiles_long <span class="ot">&lt;-</span> textiles <span class="sc">%&gt;%</span></span>
-<span id="cb24-109"><a href="#cb24-109" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">matches</span>(<span class="st">"^</span><span class="sc">\\</span><span class="st">d{4}$"</span>), <span class="at">names_to =</span> <span class="st">"Year"</span>, <span class="at">values_to =</span> <span class="st">"TextileValue"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb24-110"><a href="#cb24-110" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="st">`</span><span class="at">Country Name</span><span class="st">`</span>, <span class="st">`</span><span class="at">Country Code</span><span class="st">`</span>, Year, TextileValue)</span>
-<span id="cb24-111"><a href="#cb24-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-112"><a href="#cb24-112" aria-hidden="true" tabindex="-1"></a>combined <span class="ot">&lt;-</span> <span class="fu">left_join</span>(water_long, textiles_long, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"Country Name"</span>, <span class="st">"Country Code"</span>, <span class="st">"Year"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb24-113"><a href="#cb24-113" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Year =</span> <span class="fu">as.numeric</span>(Year))</span>
-<span id="cb24-114"><a href="#cb24-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-115"><a href="#cb24-115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-116"><a href="#cb24-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-119"><a href="#cb24-119" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb24-120"><a href="#cb24-120" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview the textile manufacturing data</span></span>
-<span id="cb24-121"><a href="#cb24-121" aria-hidden="true" tabindex="-1"></a>textiles_long <span class="sc">%&gt;%</span></span>
-<span id="cb24-122"><a href="#cb24-122" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(TextileValue)) <span class="sc">%&gt;%</span></span>
-<span id="cb24-123"><a href="#cb24-123" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span>
-<span id="cb24-124"><a href="#cb24-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-104"><a href="#cb24-104" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stderr .hidden}</span>
+<span id="cb24-105"><a href="#cb24-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-106"><a href="#cb24-106" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-107"><a href="#cb24-107" aria-hidden="true" tabindex="-1"></a><span class="in">── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──</span></span>
+<span id="cb24-108"><a href="#cb24-108" aria-hidden="true" tabindex="-1"></a><span class="in">✔ dplyr     1.1.4     ✔ readr     2.1.5</span></span>
+<span id="cb24-109"><a href="#cb24-109" aria-hidden="true" tabindex="-1"></a><span class="in">✔ forcats   1.0.0     ✔ stringr   1.5.1</span></span>
+<span id="cb24-110"><a href="#cb24-110" aria-hidden="true" tabindex="-1"></a><span class="in">✔ ggplot2   3.5.2     ✔ tibble    3.2.1</span></span>
+<span id="cb24-111"><a href="#cb24-111" aria-hidden="true" tabindex="-1"></a><span class="in">✔ lubridate 1.9.4     ✔ tidyr     1.3.1</span></span>
+<span id="cb24-112"><a href="#cb24-112" aria-hidden="true" tabindex="-1"></a><span class="in">✔ purrr     1.0.4     </span></span>
+<span id="cb24-113"><a href="#cb24-113" aria-hidden="true" tabindex="-1"></a><span class="in">── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──</span></span>
+<span id="cb24-114"><a href="#cb24-114" aria-hidden="true" tabindex="-1"></a><span class="in">✖ dplyr::filter() masks stats::filter()</span></span>
+<span id="cb24-115"><a href="#cb24-115" aria-hidden="true" tabindex="-1"></a><span class="in">✖ dplyr::lag()    masks stats::lag()</span></span>
+<span id="cb24-116"><a href="#cb24-116" aria-hidden="true" tabindex="-1"></a><span class="in">ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</span></span>
+<span id="cb24-117"><a href="#cb24-117" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-118"><a href="#cb24-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-119"><a href="#cb24-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-120"><a href="#cb24-120" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-121"><a href="#cb24-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-122"><a href="#cb24-122" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-123"><a href="#cb24-123" aria-hidden="true" tabindex="-1"></a><span class="in">library(readxl)</span></span>
+<span id="cb24-124"><a href="#cb24-124" aria-hidden="true" tabindex="-1"></a><span class="in">library(dplyr)</span></span>
 <span id="cb24-125"><a href="#cb24-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-128"><a href="#cb24-128" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb24-129"><a href="#cb24-129" aria-hidden="true" tabindex="-1"></a><span class="co"># Count missing values</span></span>
-<span id="cb24-130"><a href="#cb24-130" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Missing Water Stress values:"</span>, <span class="fu">sum</span>(<span class="fu">is.na</span>(water_long<span class="sc">$</span>WaterStress)), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb24-131"><a href="#cb24-131" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Missing Textile Manufacturing values:"</span>, <span class="fu">sum</span>(<span class="fu">is.na</span>(textiles_long<span class="sc">$</span>TextileValue)), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb24-132"><a href="#cb24-132" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-133"><a href="#cb24-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-134"><a href="#cb24-134" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2018 Scatter plot</span></span>
-<span id="cb24-137"><a href="#cb24-137" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb24-138"><a href="#cb24-138" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter 2018 data</span></span>
-<span id="cb24-139"><a href="#cb24-139" aria-hidden="true" tabindex="-1"></a>scatter_data_2018_filtered <span class="ot">&lt;-</span> combined <span class="sc">%&gt;%</span></span>
-<span id="cb24-140"><a href="#cb24-140" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Year <span class="sc">==</span> <span class="dv">2018</span>, <span class="sc">!</span><span class="fu">is.na</span>(WaterStress), <span class="sc">!</span><span class="fu">is.na</span>(TextileValue), WaterStress <span class="sc">&lt;</span> <span class="dv">300</span>)</span>
+<span id="cb24-126"><a href="#cb24-126" aria-hidden="true" tabindex="-1"></a><span class="in">water &lt;- read_excel("data/API_ER.H2O.FWST.ZS_DS2_en_excel_v2_14076.xls", skip = 3)</span></span>
+<span id="cb24-127"><a href="#cb24-127" aria-hidden="true" tabindex="-1"></a><span class="in">textiles &lt;- read_excel("data/API_NV.MNF.TXTL.ZS.UN_DS2_en_excel_v2_26490.xls", skip = 3)</span></span>
+<span id="cb24-128"><a href="#cb24-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-129"><a href="#cb24-129" aria-hidden="true" tabindex="-1"></a><span class="in">water_long &lt;- water %&gt;%</span></span>
+<span id="cb24-130"><a href="#cb24-130" aria-hidden="true" tabindex="-1"></a><span class="in">  pivot_longer(cols = matches("^\\d{4}$"), names_to = "Year", values_to = "WaterStress") %&gt;%</span></span>
+<span id="cb24-131"><a href="#cb24-131" aria-hidden="true" tabindex="-1"></a><span class="in">  select(`Country Name`, `Country Code`, Year, WaterStress)</span></span>
+<span id="cb24-132"><a href="#cb24-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-133"><a href="#cb24-133" aria-hidden="true" tabindex="-1"></a><span class="in">textiles_long &lt;- textiles %&gt;%</span></span>
+<span id="cb24-134"><a href="#cb24-134" aria-hidden="true" tabindex="-1"></a><span class="in">  pivot_longer(cols = matches("^\\d{4}$"), names_to = "Year", values_to = "TextileValue") %&gt;%</span></span>
+<span id="cb24-135"><a href="#cb24-135" aria-hidden="true" tabindex="-1"></a><span class="in">  select(`Country Name`, `Country Code`, Year, TextileValue)</span></span>
+<span id="cb24-136"><a href="#cb24-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-137"><a href="#cb24-137" aria-hidden="true" tabindex="-1"></a><span class="in">combined &lt;- left_join(water_long, textiles_long, by = c("Country Name", "Country Code", "Year")) %&gt;%</span></span>
+<span id="cb24-138"><a href="#cb24-138" aria-hidden="true" tabindex="-1"></a><span class="in">  mutate(Year = as.numeric(Year))</span></span>
+<span id="cb24-139"><a href="#cb24-139" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-140"><a href="#cb24-140" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb24-141"><a href="#cb24-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-142"><a href="#cb24-142" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 3 countries by composite score (TextileValue * WaterStress)</span></span>
-<span id="cb24-143"><a href="#cb24-143" aria-hidden="true" tabindex="-1"></a>top_countries_2018 <span class="ot">&lt;-</span> scatter_data_2018_filtered <span class="sc">%&gt;%</span></span>
-<span id="cb24-144"><a href="#cb24-144" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">score =</span> TextileValue <span class="sc">*</span> WaterStress) <span class="sc">%&gt;%</span></span>
-<span id="cb24-145"><a href="#cb24-145" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(score)) <span class="sc">%&gt;%</span></span>
-<span id="cb24-146"><a href="#cb24-146" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>)</span>
-<span id="cb24-147"><a href="#cb24-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-148"><a href="#cb24-148" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatterplot</span></span>
-<span id="cb24-149"><a href="#cb24-149" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(scatter_data_2018_filtered, <span class="fu">aes</span>(<span class="at">x =</span> TextileValue, <span class="at">y =</span> WaterStress)) <span class="sc">+</span></span>
-<span id="cb24-150"><a href="#cb24-150" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
-<span id="cb24-151"><a href="#cb24-151" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb24-152"><a href="#cb24-152" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">data =</span> top_countries_2018, <span class="fu">aes</span>(<span class="at">label =</span> <span class="st">`</span><span class="at">Country Name</span><span class="st">`</span>), <span class="at">vjust =</span> <span class="sc">-</span><span class="dv">1</span>, <span class="at">hjust =</span> <span class="fl">1.1</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
-<span id="cb24-153"><a href="#cb24-153" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">data =</span> <span class="fu">filter</span>(scatter_data_2018_filtered, <span class="st">`</span><span class="at">Country Name</span><span class="st">`</span> <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"China"</span>, <span class="st">"India"</span>, <span class="st">"Bangladesh"</span>)),</span>
-<span id="cb24-154"><a href="#cb24-154" aria-hidden="true" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">label =</span> <span class="st">`</span><span class="at">Country Name</span><span class="st">`</span>), <span class="at">vjust =</span> <span class="fl">1.5</span>, <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb24-155"><a href="#cb24-155" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Water Stress vs Textile Manufacturing (2018, Filtered)"</span>,</span>
-<span id="cb24-156"><a href="#cb24-156" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Textile Manufacturing (% of total manufacturing)"</span>,</span>
-<span id="cb24-157"><a href="#cb24-157" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Water Stress (% of renewable resources)"</span>) <span class="sc">+</span></span>
-<span id="cb24-158"><a href="#cb24-158" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
-<span id="cb24-159"><a href="#cb24-159" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-160"><a href="#cb24-160" aria-hidden="true" tabindex="-1"></a>**Figure 1.** Scatter plot showing the relationship between water stress levels and textile export values by country.</span>
-<span id="cb24-161"><a href="#cb24-161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-162"><a href="#cb24-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-163"><a href="#cb24-163" aria-hidden="true" tabindex="-1"></a><span class="fu">## Time Series Plot</span></span>
-<span id="cb24-166"><a href="#cb24-166" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb24-167"><a href="#cb24-167" aria-hidden="true" tabindex="-1"></a>time_series_data <span class="ot">&lt;-</span> combined <span class="sc">%&gt;%</span></span>
-<span id="cb24-168"><a href="#cb24-168" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="st">`</span><span class="at">Country Name</span><span class="st">`</span> <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"India"</span>, <span class="st">"China"</span>, <span class="st">"Bangladesh"</span>), <span class="sc">!</span><span class="fu">is.na</span>(WaterStress), <span class="sc">!</span><span class="fu">is.na</span>(TextileValue))</span>
+<span id="cb24-142"><a href="#cb24-142" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb24-143"><a href="#cb24-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-144"><a href="#cb24-144" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-145"><a href="#cb24-145" aria-hidden="true" tabindex="-1"></a><span class="in"># Preview the textile manufacturing data</span></span>
+<span id="cb24-146"><a href="#cb24-146" aria-hidden="true" tabindex="-1"></a><span class="in">textiles_long %&gt;%</span></span>
+<span id="cb24-147"><a href="#cb24-147" aria-hidden="true" tabindex="-1"></a><span class="in">  filter(!is.na(TextileValue)) %&gt;%</span></span>
+<span id="cb24-148"><a href="#cb24-148" aria-hidden="true" tabindex="-1"></a><span class="in">  head(10)</span></span>
+<span id="cb24-149"><a href="#cb24-149" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-150"><a href="#cb24-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-151"><a href="#cb24-151" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
+<span id="cb24-152"><a href="#cb24-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-153"><a href="#cb24-153" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-154"><a href="#cb24-154" aria-hidden="true" tabindex="-1"></a><span class="in"># A tibble: 10 × 4</span></span>
+<span id="cb24-155"><a href="#cb24-155" aria-hidden="true" tabindex="-1"></a><span class="in">   `Country Name` `Country Code` Year  TextileValue</span></span>
+<span id="cb24-156"><a href="#cb24-156" aria-hidden="true" tabindex="-1"></a><span class="in">   &lt;chr&gt;          &lt;chr&gt;          &lt;chr&gt;        &lt;dbl&gt;</span></span>
+<span id="cb24-157"><a href="#cb24-157" aria-hidden="true" tabindex="-1"></a><span class="in"> 1 Albania        ALB            2010          26.4</span></span>
+<span id="cb24-158"><a href="#cb24-158" aria-hidden="true" tabindex="-1"></a><span class="in"> 2 Albania        ALB            2011          31.5</span></span>
+<span id="cb24-159"><a href="#cb24-159" aria-hidden="true" tabindex="-1"></a><span class="in"> 3 Albania        ALB            2012          27.3</span></span>
+<span id="cb24-160"><a href="#cb24-160" aria-hidden="true" tabindex="-1"></a><span class="in"> 4 Albania        ALB            2013          31.1</span></span>
+<span id="cb24-161"><a href="#cb24-161" aria-hidden="true" tabindex="-1"></a><span class="in"> 5 Albania        ALB            2014          32.7</span></span>
+<span id="cb24-162"><a href="#cb24-162" aria-hidden="true" tabindex="-1"></a><span class="in"> 6 Albania        ALB            2015          32.4</span></span>
+<span id="cb24-163"><a href="#cb24-163" aria-hidden="true" tabindex="-1"></a><span class="in"> 7 Albania        ALB            2016          33.7</span></span>
+<span id="cb24-164"><a href="#cb24-164" aria-hidden="true" tabindex="-1"></a><span class="in"> 8 Albania        ALB            2017          34.9</span></span>
+<span id="cb24-165"><a href="#cb24-165" aria-hidden="true" tabindex="-1"></a><span class="in"> 9 Albania        ALB            2018          36.6</span></span>
+<span id="cb24-166"><a href="#cb24-166" aria-hidden="true" tabindex="-1"></a><span class="in">10 Albania        ALB            2019          36.4</span></span>
+<span id="cb24-167"><a href="#cb24-167" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-168"><a href="#cb24-168" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-169"><a href="#cb24-169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-170"><a href="#cb24-170" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(time_series_data, <span class="fu">aes</span>(<span class="at">x =</span> Year)) <span class="sc">+</span></span>
-<span id="cb24-171"><a href="#cb24-171" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> WaterStress, <span class="at">color =</span> <span class="st">"Water Stress"</span>), <span class="at">linetype =</span> <span class="st">"solid"</span>) <span class="sc">+</span></span>
-<span id="cb24-172"><a href="#cb24-172" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> TextileValue, <span class="at">color =</span> <span class="st">"Textile Manufacturing"</span>), <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
-<span id="cb24-173"><a href="#cb24-173" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> <span class="st">`</span><span class="at">Country Name</span><span class="st">`</span>) <span class="sc">+</span></span>
-<span id="cb24-174"><a href="#cb24-174" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Water Stress and Textile Manufacturing Over Time by Country"</span>,</span>
-<span id="cb24-175"><a href="#cb24-175" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Percentage"</span>,</span>
-<span id="cb24-176"><a href="#cb24-176" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>,</span>
-<span id="cb24-177"><a href="#cb24-177" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Indicator"</span>) <span class="sc">+</span></span>
-<span id="cb24-178"><a href="#cb24-178" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
-<span id="cb24-179"><a href="#cb24-179" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-180"><a href="#cb24-180" aria-hidden="true" tabindex="-1"></a>**Figure 2.** Time series of annual textile export values for China, India, and Bangladesh.</span>
+<span id="cb24-170"><a href="#cb24-170" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-171"><a href="#cb24-171" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-172"><a href="#cb24-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-173"><a href="#cb24-173" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb24-174"><a href="#cb24-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-175"><a href="#cb24-175" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-176"><a href="#cb24-176" aria-hidden="true" tabindex="-1"></a><span class="in"># Count missing values</span></span>
+<span id="cb24-177"><a href="#cb24-177" aria-hidden="true" tabindex="-1"></a><span class="in">cat("Missing Water Stress values:", sum(is.na(water_long$WaterStress)), "\n")</span></span>
+<span id="cb24-178"><a href="#cb24-178" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-179"><a href="#cb24-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-180"><a href="#cb24-180" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
 <span id="cb24-181"><a href="#cb24-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-182"><a href="#cb24-182" aria-hidden="true" tabindex="-1"></a><span class="fu">## Correlation Tests</span></span>
-<span id="cb24-183"><a href="#cb24-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-186"><a href="#cb24-186" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb24-187"><a href="#cb24-187" aria-hidden="true" tabindex="-1"></a><span class="co"># India correlation</span></span>
-<span id="cb24-188"><a href="#cb24-188" aria-hidden="true" tabindex="-1"></a>india_data <span class="ot">&lt;-</span> combined <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="st">`</span><span class="at">Country Name</span><span class="st">`</span> <span class="sc">==</span> <span class="st">"India"</span>, <span class="sc">!</span><span class="fu">is.na</span>(WaterStress), <span class="sc">!</span><span class="fu">is.na</span>(TextileValue))</span>
-<span id="cb24-189"><a href="#cb24-189" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(india_data<span class="sc">$</span>TextileValue, india_data<span class="sc">$</span>WaterStress)</span>
-<span id="cb24-190"><a href="#cb24-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-191"><a href="#cb24-191" aria-hidden="true" tabindex="-1"></a><span class="co"># China correlation</span></span>
-<span id="cb24-192"><a href="#cb24-192" aria-hidden="true" tabindex="-1"></a>china_data <span class="ot">&lt;-</span> combined <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="st">`</span><span class="at">Country Name</span><span class="st">`</span> <span class="sc">==</span> <span class="st">"China"</span>, <span class="sc">!</span><span class="fu">is.na</span>(WaterStress), <span class="sc">!</span><span class="fu">is.na</span>(TextileValue))</span>
-<span id="cb24-193"><a href="#cb24-193" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(china_data<span class="sc">$</span>TextileValue, china_data<span class="sc">$</span>WaterStress)</span>
+<span id="cb24-182"><a href="#cb24-182" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-183"><a href="#cb24-183" aria-hidden="true" tabindex="-1"></a><span class="in">Missing Water Stress values: 11000 </span></span>
+<span id="cb24-184"><a href="#cb24-184" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-185"><a href="#cb24-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-186"><a href="#cb24-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-187"><a href="#cb24-187" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-188"><a href="#cb24-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-189"><a href="#cb24-189" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-190"><a href="#cb24-190" aria-hidden="true" tabindex="-1"></a><span class="in">cat("Missing Textile Manufacturing values:", sum(is.na(textiles_long$TextileValue)), "\n")</span></span>
+<span id="cb24-191"><a href="#cb24-191" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-192"><a href="#cb24-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-193"><a href="#cb24-193" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
 <span id="cb24-194"><a href="#cb24-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-195"><a href="#cb24-195" aria-hidden="true" tabindex="-1"></a><span class="co"># Bangladesh correlation</span></span>
-<span id="cb24-196"><a href="#cb24-196" aria-hidden="true" tabindex="-1"></a>bangladesh_data <span class="ot">&lt;-</span> combined <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="st">`</span><span class="at">Country Name</span><span class="st">`</span> <span class="sc">==</span> <span class="st">"Bangladesh"</span>, <span class="sc">!</span><span class="fu">is.na</span>(WaterStress), <span class="sc">!</span><span class="fu">is.na</span>(TextileValue))</span>
-<span id="cb24-197"><a href="#cb24-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-198"><a href="#cb24-198" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-195"><a href="#cb24-195" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-196"><a href="#cb24-196" aria-hidden="true" tabindex="-1"></a><span class="in">Missing Textile Manufacturing values: 13692 </span></span>
+<span id="cb24-197"><a href="#cb24-197" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-198"><a href="#cb24-198" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-199"><a href="#cb24-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-200"><a href="#cb24-200" aria-hidden="true" tabindex="-1"></a><span class="fu">## Top 5 Countries by Average Textile Output and Water Stress</span></span>
-<span id="cb24-201"><a href="#cb24-201" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-204"><a href="#cb24-204" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb24-205"><a href="#cb24-205" aria-hidden="true" tabindex="-1"></a>country_averages <span class="ot">&lt;-</span> combined <span class="sc">%&gt;%</span></span>
-<span id="cb24-206"><a href="#cb24-206" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">Country Name</span><span class="st">`</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb24-207"><a href="#cb24-207" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">avg_textile =</span> <span class="fu">mean</span>(TextileValue, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb24-208"><a href="#cb24-208" aria-hidden="true" tabindex="-1"></a>            <span class="at">avg_water_stress =</span> <span class="fu">mean</span>(WaterStress, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb24-209"><a href="#cb24-209" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
-<span id="cb24-210"><a href="#cb24-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-211"><a href="#cb24-211" aria-hidden="true" tabindex="-1"></a>top_textile <span class="ot">&lt;-</span> country_averages <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(avg_textile)) <span class="sc">%&gt;%</span> <span class="fu">slice</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>)</span>
-<span id="cb24-212"><a href="#cb24-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-213"><a href="#cb24-213" aria-hidden="true" tabindex="-1"></a>top_water_stress <span class="ot">&lt;-</span> country_averages <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(avg_water_stress)) <span class="sc">%&gt;%</span> <span class="fu">slice</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>)</span>
+<span id="cb24-200"><a href="#cb24-200" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-201"><a href="#cb24-201" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-202"><a href="#cb24-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-203"><a href="#cb24-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-204"><a href="#cb24-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-205"><a href="#cb24-205" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2018 Scatter plot</span></span>
+<span id="cb24-206"><a href="#cb24-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-207"><a href="#cb24-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-208"><a href="#cb24-208" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb24-209"><a href="#cb24-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-210"><a href="#cb24-210" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-211"><a href="#cb24-211" aria-hidden="true" tabindex="-1"></a><span class="in"># Filter 2018 data</span></span>
+<span id="cb24-212"><a href="#cb24-212" aria-hidden="true" tabindex="-1"></a><span class="in">scatter_data_2018_filtered &lt;- combined %&gt;%</span></span>
+<span id="cb24-213"><a href="#cb24-213" aria-hidden="true" tabindex="-1"></a><span class="in">  filter(Year == 2018, !is.na(WaterStress), !is.na(TextileValue), WaterStress &lt; 300)</span></span>
 <span id="cb24-214"><a href="#cb24-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-215"><a href="#cb24-215" aria-hidden="true" tabindex="-1"></a>top_textile</span>
-<span id="cb24-216"><a href="#cb24-216" aria-hidden="true" tabindex="-1"></a>top_water_stress</span>
-<span id="cb24-217"><a href="#cb24-217" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-218"><a href="#cb24-218" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-219"><a href="#cb24-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-220"><a href="#cb24-220" aria-hidden="true" tabindex="-1"></a><span class="fu">## Global Correlation Test</span></span>
-<span id="cb24-221"><a href="#cb24-221" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-224"><a href="#cb24-224" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb24-225"><a href="#cb24-225" aria-hidden="true" tabindex="-1"></a>global_corr_data <span class="ot">&lt;-</span> combined <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(WaterStress), <span class="sc">!</span><span class="fu">is.na</span>(TextileValue))</span>
-<span id="cb24-226"><a href="#cb24-226" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(global_corr_data<span class="sc">$</span>TextileValue, global_corr_data<span class="sc">$</span>WaterStress)</span>
-<span id="cb24-227"><a href="#cb24-227" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-228"><a href="#cb24-228" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-229"><a href="#cb24-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-230"><a href="#cb24-230" aria-hidden="true" tabindex="-1"></a><span class="fu"># Discussion</span></span>
-<span id="cb24-231"><a href="#cb24-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-232"><a href="#cb24-232" aria-hidden="true" tabindex="-1"></a>This study aimed to examine the relationship between textile</span>
-<span id="cb24-233"><a href="#cb24-233" aria-hidden="true" tabindex="-1"></a>manufacturing and water stress across countries, focusing particularly</span>
-<span id="cb24-234"><a href="#cb24-234" aria-hidden="true" tabindex="-1"></a>on India, China, and Bangladesh—nations commonly associated with fast</span>
-<span id="cb24-235"><a href="#cb24-235" aria-hidden="true" tabindex="-1"></a>fashion production. The hypothesis was that higher textile output would</span>
-<span id="cb24-236"><a href="#cb24-236" aria-hidden="true" tabindex="-1"></a>correlate with higher water stress at the national level due to the</span>
-<span id="cb24-237"><a href="#cb24-237" aria-hidden="true" tabindex="-1"></a>water-intensive nature of cotton farming, textile dyeing, and fabric</span>
-<span id="cb24-238"><a href="#cb24-238" aria-hidden="true" tabindex="-1"></a>production. However, the results of this analysis reveal a much more</span>
-<span id="cb24-239"><a href="#cb24-239" aria-hidden="true" tabindex="-1"></a>complex relationship, with textile output alone not consistently</span>
-<span id="cb24-240"><a href="#cb24-240" aria-hidden="true" tabindex="-1"></a>explaining national water stress patterns.</span>
-<span id="cb24-241"><a href="#cb24-241" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-242"><a href="#cb24-242" aria-hidden="true" tabindex="-1"></a>The scatterplot analysis for 2018, after filtering extreme water stress</span>
-<span id="cb24-243"><a href="#cb24-243" aria-hidden="true" tabindex="-1"></a>outliers (above 300%), highlighted that Egypt, Uzbekistan, and Sri Lanka</span>
-<span id="cb24-244"><a href="#cb24-244" aria-hidden="true" tabindex="-1"></a>had the highest combined textile output and water stress, while China,</span>
-<span id="cb24-245"><a href="#cb24-245" aria-hidden="true" tabindex="-1"></a>India, and Bangladesh—although top textile producers—did not exhibit the</span>
-<span id="cb24-246"><a href="#cb24-246" aria-hidden="true" tabindex="-1"></a>highest water stress levels. This finding challenges the assumption that</span>
-<span id="cb24-247"><a href="#cb24-247" aria-hidden="true" tabindex="-1"></a>fast fashion-heavy nations automatically face higher water pressures.</span>
+<span id="cb24-215"><a href="#cb24-215" aria-hidden="true" tabindex="-1"></a><span class="in"># Top 3 countries by composite score (TextileValue * WaterStress)</span></span>
+<span id="cb24-216"><a href="#cb24-216" aria-hidden="true" tabindex="-1"></a><span class="in">top_countries_2018 &lt;- scatter_data_2018_filtered %&gt;%</span></span>
+<span id="cb24-217"><a href="#cb24-217" aria-hidden="true" tabindex="-1"></a><span class="in">  mutate(score = TextileValue * WaterStress) %&gt;%</span></span>
+<span id="cb24-218"><a href="#cb24-218" aria-hidden="true" tabindex="-1"></a><span class="in">  arrange(desc(score)) %&gt;%</span></span>
+<span id="cb24-219"><a href="#cb24-219" aria-hidden="true" tabindex="-1"></a><span class="in">  slice(1:3)</span></span>
+<span id="cb24-220"><a href="#cb24-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-221"><a href="#cb24-221" aria-hidden="true" tabindex="-1"></a><span class="in"># Scatterplot</span></span>
+<span id="cb24-222"><a href="#cb24-222" aria-hidden="true" tabindex="-1"></a><span class="in">ggplot(scatter_data_2018_filtered, aes(x = TextileValue, y = WaterStress)) +</span></span>
+<span id="cb24-223"><a href="#cb24-223" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_point(alpha = 0.6) +</span></span>
+<span id="cb24-224"><a href="#cb24-224" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_smooth(method = "lm", se = FALSE, color = "blue") +</span></span>
+<span id="cb24-225"><a href="#cb24-225" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_text(data = top_countries_2018, aes(label = `Country Name`), vjust = -1, hjust = 1.1, size = 3, color = "red") +</span></span>
+<span id="cb24-226"><a href="#cb24-226" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_text(data = filter(scatter_data_2018_filtered, `Country Name` %in% c("China", "India", "Bangladesh")),</span></span>
+<span id="cb24-227"><a href="#cb24-227" aria-hidden="true" tabindex="-1"></a><span class="in">            aes(label = `Country Name`), vjust = 1.5, hjust = -0.1, size = 3) +</span></span>
+<span id="cb24-228"><a href="#cb24-228" aria-hidden="true" tabindex="-1"></a><span class="in">  labs(title = "Water Stress vs Textile Manufacturing (2018, Filtered)",</span></span>
+<span id="cb24-229"><a href="#cb24-229" aria-hidden="true" tabindex="-1"></a><span class="in">       x = "Textile Manufacturing (% of total manufacturing)",</span></span>
+<span id="cb24-230"><a href="#cb24-230" aria-hidden="true" tabindex="-1"></a><span class="in">       y = "Water Stress (% of renewable resources)") +</span></span>
+<span id="cb24-231"><a href="#cb24-231" aria-hidden="true" tabindex="-1"></a><span class="in">  theme_minimal()</span></span>
+<span id="cb24-232"><a href="#cb24-232" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-233"><a href="#cb24-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-234"><a href="#cb24-234" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stderr .hidden}</span>
+<span id="cb24-235"><a href="#cb24-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-236"><a href="#cb24-236" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-237"><a href="#cb24-237" aria-hidden="true" tabindex="-1"></a><span class="in">`geom_smooth()` using formula = 'y ~ x'</span></span>
+<span id="cb24-238"><a href="#cb24-238" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-239"><a href="#cb24-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-240"><a href="#cb24-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-241"><a href="#cb24-241" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-242"><a href="#cb24-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-243"><a href="#cb24-243" aria-hidden="true" tabindex="-1"></a>::: {.cell-output-display}</span>
+<span id="cb24-244"><a href="#cb24-244" aria-hidden="true" tabindex="-1"></a><span class="al">![](index_files/figure-html/unnamed-chunk-4-1.png)</span>{width=672}</span>
+<span id="cb24-245"><a href="#cb24-245" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-246"><a href="#cb24-246" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-247"><a href="#cb24-247" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-248"><a href="#cb24-248" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-249"><a href="#cb24-249" aria-hidden="true" tabindex="-1"></a>This outcome underscores that water stress is influenced by multiple</span>
-<span id="cb24-250"><a href="#cb24-250" aria-hidden="true" tabindex="-1"></a>factors beyond textile manufacturing. For instance,</span>
-<span id="cb24-251"><a href="#cb24-251" aria-hidden="true" tabindex="-1"></a>agriculture—particularly water-intensive crops—often consumes far more</span>
-<span id="cb24-252"><a href="#cb24-252" aria-hidden="true" tabindex="-1"></a>water than industry. Climate variability, population growth,</span>
-<span id="cb24-253"><a href="#cb24-253" aria-hidden="true" tabindex="-1"></a>urbanization, and government water policies all contribute to water</span>
-<span id="cb24-254"><a href="#cb24-254" aria-hidden="true" tabindex="-1"></a>demand and scarcity. The case of Bangladesh illustrates this well.</span>
-<span id="cb24-255"><a href="#cb24-255" aria-hidden="true" tabindex="-1"></a>Despite being a global leader in textile exports, Bangladesh maintains</span>
-<span id="cb24-256"><a href="#cb24-256" aria-hidden="true" tabindex="-1"></a>relatively low water stress (5.7% average), while other textile</span>
-<span id="cb24-257"><a href="#cb24-257" aria-hidden="true" tabindex="-1"></a>producers like Syria and Pakistan experience high water stress (above</span>
-<span id="cb24-258"><a href="#cb24-258" aria-hidden="true" tabindex="-1"></a>100%), withdrawing freshwater at or beyond renewable levels.</span>
-<span id="cb24-259"><a href="#cb24-259" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-260"><a href="#cb24-260" aria-hidden="true" tabindex="-1"></a>The time series analysis for India, China, and Bangladesh provided</span>
-<span id="cb24-261"><a href="#cb24-261" aria-hidden="true" tabindex="-1"></a>additional insight. India’s water stress has steadily increased over</span>
-<span id="cb24-262"><a href="#cb24-262" aria-hidden="true" tabindex="-1"></a>time, despite a decline in textile manufacturing output. This suggests</span>
-<span id="cb24-263"><a href="#cb24-263" aria-hidden="true" tabindex="-1"></a>that agriculture, particularly rice and sugarcane production, along with</span>
-<span id="cb24-264"><a href="#cb24-264" aria-hidden="true" tabindex="-1"></a>urban water demands and climate-related shortages, are likely driving</span>
-<span id="cb24-265"><a href="#cb24-265" aria-hidden="true" tabindex="-1"></a>water stress in India. China’s water stress remained relatively stable,</span>
-<span id="cb24-266"><a href="#cb24-266" aria-hidden="true" tabindex="-1"></a>even as textile output decreased gradually. Bangladesh showed limited</span>
-<span id="cb24-267"><a href="#cb24-267" aria-hidden="true" tabindex="-1"></a>data, but available trends suggested low water stress relative to its</span>
-<span id="cb24-268"><a href="#cb24-268" aria-hidden="true" tabindex="-1"></a>textile manufacturing levels.</span>
-<span id="cb24-269"><a href="#cb24-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-270"><a href="#cb24-270" aria-hidden="true" tabindex="-1"></a>These trends were further reinforced by correlation analyses. India and</span>
-<span id="cb24-271"><a href="#cb24-271" aria-hidden="true" tabindex="-1"></a>China both exhibited strong negative correlations between textile</span>
-<span id="cb24-272"><a href="#cb24-272" aria-hidden="true" tabindex="-1"></a>manufacturing and water stress (India: r = -0.97, China: r = -0.96, both</span>
-<span id="cb24-273"><a href="#cb24-273" aria-hidden="true" tabindex="-1"></a>p <span class="sc">\&lt;</span> 0.001). This means that as textile output declined, water stress</span>
-<span id="cb24-274"><a href="#cb24-274" aria-hidden="true" tabindex="-1"></a>increased in both countries. While counterintuitive, these results align</span>
-<span id="cb24-275"><a href="#cb24-275" aria-hidden="true" tabindex="-1"></a>with the time series findings, suggesting that other sectors or broader</span>
-<span id="cb24-276"><a href="#cb24-276" aria-hidden="true" tabindex="-1"></a>environmental changes—such as urbanization or climate factors—are</span>
-<span id="cb24-277"><a href="#cb24-277" aria-hidden="true" tabindex="-1"></a>driving national water pressures more than textile output.</span>
-<span id="cb24-278"><a href="#cb24-278" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-279"><a href="#cb24-279" aria-hidden="true" tabindex="-1"></a>For Bangladesh, the correlation test could not be performed due to</span>
-<span id="cb24-280"><a href="#cb24-280" aria-hidden="true" tabindex="-1"></a>limited overlapping data between the two variables. This reflects one of</span>
-<span id="cb24-281"><a href="#cb24-281" aria-hidden="true" tabindex="-1"></a>the challenges in working with global datasets—inconsistent data</span>
-<span id="cb24-282"><a href="#cb24-282" aria-hidden="true" tabindex="-1"></a>availability across countries and years. Even though Bangladesh is a</span>
-<span id="cb24-283"><a href="#cb24-283" aria-hidden="true" tabindex="-1"></a>major textile producer, its water stress patterns could not be fully</span>
-<span id="cb24-284"><a href="#cb24-284" aria-hidden="true" tabindex="-1"></a>assessed due to gaps in reporting.</span>
+<span id="cb24-249"><a href="#cb24-249" aria-hidden="true" tabindex="-1"></a>**Figure 1.** Scatter plot showing the relationship between water stress levels and textile export values by country.</span>
+<span id="cb24-250"><a href="#cb24-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-251"><a href="#cb24-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-252"><a href="#cb24-252" aria-hidden="true" tabindex="-1"></a><span class="fu">## Time Series Plot</span></span>
+<span id="cb24-253"><a href="#cb24-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-254"><a href="#cb24-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-255"><a href="#cb24-255" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb24-256"><a href="#cb24-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-257"><a href="#cb24-257" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-258"><a href="#cb24-258" aria-hidden="true" tabindex="-1"></a><span class="in">time_series_data &lt;- combined %&gt;%</span></span>
+<span id="cb24-259"><a href="#cb24-259" aria-hidden="true" tabindex="-1"></a><span class="in">  filter(`Country Name` %in% c("India", "China", "Bangladesh"), !is.na(WaterStress), !is.na(TextileValue))</span></span>
+<span id="cb24-260"><a href="#cb24-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-261"><a href="#cb24-261" aria-hidden="true" tabindex="-1"></a><span class="in">ggplot(time_series_data, aes(x = Year)) +</span></span>
+<span id="cb24-262"><a href="#cb24-262" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_line(aes(y = WaterStress, color = "Water Stress"), linetype = "solid") +</span></span>
+<span id="cb24-263"><a href="#cb24-263" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_line(aes(y = TextileValue, color = "Textile Manufacturing"), linetype = "dashed") +</span></span>
+<span id="cb24-264"><a href="#cb24-264" aria-hidden="true" tabindex="-1"></a><span class="in">  facet_wrap(~ `Country Name`) +</span></span>
+<span id="cb24-265"><a href="#cb24-265" aria-hidden="true" tabindex="-1"></a><span class="in">  labs(title = "Water Stress and Textile Manufacturing Over Time by Country",</span></span>
+<span id="cb24-266"><a href="#cb24-266" aria-hidden="true" tabindex="-1"></a><span class="in">       y = "Percentage",</span></span>
+<span id="cb24-267"><a href="#cb24-267" aria-hidden="true" tabindex="-1"></a><span class="in">       x = "Year",</span></span>
+<span id="cb24-268"><a href="#cb24-268" aria-hidden="true" tabindex="-1"></a><span class="in">       color = "Indicator") +</span></span>
+<span id="cb24-269"><a href="#cb24-269" aria-hidden="true" tabindex="-1"></a><span class="in">  theme_minimal()</span></span>
+<span id="cb24-270"><a href="#cb24-270" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-271"><a href="#cb24-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-272"><a href="#cb24-272" aria-hidden="true" tabindex="-1"></a>::: {.cell-output-display}</span>
+<span id="cb24-273"><a href="#cb24-273" aria-hidden="true" tabindex="-1"></a><span class="al">![](index_files/figure-html/unnamed-chunk-5-1.png)</span>{width=672}</span>
+<span id="cb24-274"><a href="#cb24-274" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-275"><a href="#cb24-275" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-276"><a href="#cb24-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-277"><a href="#cb24-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-278"><a href="#cb24-278" aria-hidden="true" tabindex="-1"></a>**Figure 2.** Time series of annual textile export values for China, India, and Bangladesh.</span>
+<span id="cb24-279"><a href="#cb24-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-280"><a href="#cb24-280" aria-hidden="true" tabindex="-1"></a><span class="fu">## Correlation Tests</span></span>
+<span id="cb24-281"><a href="#cb24-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-282"><a href="#cb24-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-283"><a href="#cb24-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-284"><a href="#cb24-284" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
 <span id="cb24-285"><a href="#cb24-285" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-286"><a href="#cb24-286" aria-hidden="true" tabindex="-1"></a>Despite the limitations in water stress data for Bangladesh, external literature highlights the environmental impact of its textile sector. For example, a 2024 study titled Water Pollution and the Textile Industry in Bangladesh: Flawed Corporate Practices or Restrictive Opportunities? <span class="co">[</span><span class="ot">@article</span><span class="co">]</span> details how untreated wastewater from dyeing facilities has severely degraded water quality in Dhaka’s rivers. The study argues that while global brands pressure factories to reduce pollution, local infrastructure and regulatory gaps often leave producers with limited means to adopt cleaner practices. This reinforces the idea that low national water stress levels can mask serious regional water quality issues, especially in industrial clusters</span>
-<span id="cb24-287"><a href="#cb24-287" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-288"><a href="#cb24-288" aria-hidden="true" tabindex="-1"></a>Expanding the scope to a global analysis, a correlation test across all</span>
-<span id="cb24-289"><a href="#cb24-289" aria-hidden="true" tabindex="-1"></a>countries and years produced a very weak negative correlation (r =</span>
-<span id="cb24-290"><a href="#cb24-290" aria-hidden="true" tabindex="-1"></a>-0.08, p <span class="sc">\&lt;</span> 0.001) between textile manufacturing and water stress. While</span>
-<span id="cb24-291"><a href="#cb24-291" aria-hidden="true" tabindex="-1"></a>statistically significant because of the large sample size, the</span>
-<span id="cb24-292"><a href="#cb24-292" aria-hidden="true" tabindex="-1"></a>relationship is practically negligible, suggesting that globally,</span>
-<span id="cb24-293"><a href="#cb24-293" aria-hidden="true" tabindex="-1"></a>textile output is not a reliable predictor of water stress. This</span>
-<span id="cb24-294"><a href="#cb24-294" aria-hidden="true" tabindex="-1"></a>supports the idea that local factors, such as climate, agricultural</span>
-<span id="cb24-295"><a href="#cb24-295" aria-hidden="true" tabindex="-1"></a>practices, and water policies, heavily influence national water</span>
-<span id="cb24-296"><a href="#cb24-296" aria-hidden="true" tabindex="-1"></a>conditions.</span>
+<span id="cb24-286"><a href="#cb24-286" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-287"><a href="#cb24-287" aria-hidden="true" tabindex="-1"></a><span class="in"># India correlation</span></span>
+<span id="cb24-288"><a href="#cb24-288" aria-hidden="true" tabindex="-1"></a><span class="in">india_data &lt;- combined %&gt;% filter(`Country Name` == "India", !is.na(WaterStress), !is.na(TextileValue))</span></span>
+<span id="cb24-289"><a href="#cb24-289" aria-hidden="true" tabindex="-1"></a><span class="in">cor.test(india_data$TextileValue, india_data$WaterStress)</span></span>
+<span id="cb24-290"><a href="#cb24-290" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-291"><a href="#cb24-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-292"><a href="#cb24-292" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
+<span id="cb24-293"><a href="#cb24-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-294"><a href="#cb24-294" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-295"><a href="#cb24-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-296"><a href="#cb24-296" aria-hidden="true" tabindex="-1"></a><span class="in">    Pearson's product-moment correlation</span></span>
 <span id="cb24-297"><a href="#cb24-297" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-298"><a href="#cb24-298" aria-hidden="true" tabindex="-1"></a>To further explore this relationship, the study examined the top five</span>
-<span id="cb24-299"><a href="#cb24-299" aria-hidden="true" tabindex="-1"></a>countries by average textile manufacturing output and average water</span>
-<span id="cb24-300"><a href="#cb24-300" aria-hidden="true" tabindex="-1"></a>stress. Among the top textile producers were Macao SAR (China),</span>
-<span id="cb24-301"><a href="#cb24-301" aria-hidden="true" tabindex="-1"></a>Bangladesh, Syria, Cambodia, and Pakistan. These countries had varying</span>
-<span id="cb24-302"><a href="#cb24-302" aria-hidden="true" tabindex="-1"></a>levels of water stress, with Bangladesh maintaining low water stress and</span>
-<span id="cb24-303"><a href="#cb24-303" aria-hidden="true" tabindex="-1"></a>Syria and Pakistan experiencing high water stress (above 100%).</span>
-<span id="cb24-304"><a href="#cb24-304" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-305"><a href="#cb24-305" aria-hidden="true" tabindex="-1"></a>Conversely, the top five water-stressed countries—Kuwait, United Arab</span>
-<span id="cb24-306"><a href="#cb24-306" aria-hidden="true" tabindex="-1"></a>Emirates, Saudi Arabia, Libya, and Qatar—are predominantly arid nations</span>
-<span id="cb24-307"><a href="#cb24-307" aria-hidden="true" tabindex="-1"></a>with extremely high water stress levels (ranging from 358% to 2612%).</span>
-<span id="cb24-308"><a href="#cb24-308" aria-hidden="true" tabindex="-1"></a>However, these countries reported low textile manufacturing output</span>
-<span id="cb24-309"><a href="#cb24-309" aria-hidden="true" tabindex="-1"></a>(below 6.5%). This contrast demonstrates that water scarcity in these</span>
-<span id="cb24-310"><a href="#cb24-310" aria-hidden="true" tabindex="-1"></a>regions is likely driven by climate conditions and urban/agricultural</span>
-<span id="cb24-311"><a href="#cb24-311" aria-hidden="true" tabindex="-1"></a>demands, rather than textile production.</span>
-<span id="cb24-312"><a href="#cb24-312" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-313"><a href="#cb24-313" aria-hidden="true" tabindex="-1"></a>These findings align with previous research emphasizing the need for</span>
-<span id="cb24-314"><a href="#cb24-314" aria-hidden="true" tabindex="-1"></a>context-specific analyses when addressing water stress. For example,</span>
-<span id="cb24-315"><a href="#cb24-315" aria-hidden="true" tabindex="-1"></a>countries like India and China may face water shortages driven by</span>
-<span id="cb24-316"><a href="#cb24-316" aria-hidden="true" tabindex="-1"></a>agriculture, urban expansion, and climate variability, whereas Middle</span>
-<span id="cb24-317"><a href="#cb24-317" aria-hidden="true" tabindex="-1"></a>Eastern nations contend with naturally scarce water supplies.</span>
+<span id="cb24-298"><a href="#cb24-298" aria-hidden="true" tabindex="-1"></a><span class="in">data:  india_data$TextileValue and india_data$WaterStress</span></span>
+<span id="cb24-299"><a href="#cb24-299" aria-hidden="true" tabindex="-1"></a><span class="in">t = -15.753, df = 18, p-value = 5.662e-12</span></span>
+<span id="cb24-300"><a href="#cb24-300" aria-hidden="true" tabindex="-1"></a><span class="in">alternative hypothesis: true correlation is not equal to 0</span></span>
+<span id="cb24-301"><a href="#cb24-301" aria-hidden="true" tabindex="-1"></a><span class="in">95 percent confidence interval:</span></span>
+<span id="cb24-302"><a href="#cb24-302" aria-hidden="true" tabindex="-1"></a><span class="in"> -0.9865618 -0.9133402</span></span>
+<span id="cb24-303"><a href="#cb24-303" aria-hidden="true" tabindex="-1"></a><span class="in">sample estimates:</span></span>
+<span id="cb24-304"><a href="#cb24-304" aria-hidden="true" tabindex="-1"></a><span class="in">       cor </span></span>
+<span id="cb24-305"><a href="#cb24-305" aria-hidden="true" tabindex="-1"></a><span class="in">-0.9655946 </span></span>
+<span id="cb24-306"><a href="#cb24-306" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-307"><a href="#cb24-307" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-308"><a href="#cb24-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-309"><a href="#cb24-309" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-310"><a href="#cb24-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-311"><a href="#cb24-311" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-312"><a href="#cb24-312" aria-hidden="true" tabindex="-1"></a><span class="in"># China correlation</span></span>
+<span id="cb24-313"><a href="#cb24-313" aria-hidden="true" tabindex="-1"></a><span class="in">china_data &lt;- combined %&gt;% filter(`Country Name` == "China", !is.na(WaterStress), !is.na(TextileValue))</span></span>
+<span id="cb24-314"><a href="#cb24-314" aria-hidden="true" tabindex="-1"></a><span class="in">cor.test(china_data$TextileValue, china_data$WaterStress)</span></span>
+<span id="cb24-315"><a href="#cb24-315" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-316"><a href="#cb24-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-317"><a href="#cb24-317" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
 <span id="cb24-318"><a href="#cb24-318" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-319"><a href="#cb24-319" aria-hidden="true" tabindex="-1"></a>This study challenges the narrative that fast fashion alone is a primary</span>
-<span id="cb24-320"><a href="#cb24-320" aria-hidden="true" tabindex="-1"></a>contributor to water stress. While textile manufacturing certainly has a</span>
-<span id="cb24-321"><a href="#cb24-321" aria-hidden="true" tabindex="-1"></a>significant environmental footprint, the data shows that other sectors,</span>
-<span id="cb24-322"><a href="#cb24-322" aria-hidden="true" tabindex="-1"></a>particularly agriculture, often exert greater pressure on water</span>
-<span id="cb24-323"><a href="#cb24-323" aria-hidden="true" tabindex="-1"></a>resources. Water stress is a multifaceted issue, influenced by sectoral</span>
-<span id="cb24-324"><a href="#cb24-324" aria-hidden="true" tabindex="-1"></a>water demands, regional climates, technological efficiencies, and policy</span>
-<span id="cb24-325"><a href="#cb24-325" aria-hidden="true" tabindex="-1"></a>decisions.</span>
-<span id="cb24-326"><a href="#cb24-326" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-327"><a href="#cb24-327" aria-hidden="true" tabindex="-1"></a>The analysis also highlighted data limitations, particularly with</span>
-<span id="cb24-328"><a href="#cb24-328" aria-hidden="true" tabindex="-1"></a>Bangladesh, where incomplete records prevented a full correlation</span>
-<span id="cb24-329"><a href="#cb24-329" aria-hidden="true" tabindex="-1"></a>analysis. This reflects a broader challenge with global environmental</span>
-<span id="cb24-330"><a href="#cb24-330" aria-hidden="true" tabindex="-1"></a>datasets: inconsistent data collection and reporting. Reliable,</span>
-<span id="cb24-331"><a href="#cb24-331" aria-hidden="true" tabindex="-1"></a>comprehensive data is crucial for accurate assessments of global</span>
-<span id="cb24-332"><a href="#cb24-332" aria-hidden="true" tabindex="-1"></a>resource use patterns. Improvements in data standardization and</span>
-<span id="cb24-333"><a href="#cb24-333" aria-hidden="true" tabindex="-1"></a>reporting are essential for advancing research and informing water</span>
-<span id="cb24-334"><a href="#cb24-334" aria-hidden="true" tabindex="-1"></a>management strategies.</span>
+<span id="cb24-319"><a href="#cb24-319" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-320"><a href="#cb24-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-321"><a href="#cb24-321" aria-hidden="true" tabindex="-1"></a><span class="in">    Pearson's product-moment correlation</span></span>
+<span id="cb24-322"><a href="#cb24-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-323"><a href="#cb24-323" aria-hidden="true" tabindex="-1"></a><span class="in">data:  china_data$TextileValue and china_data$WaterStress</span></span>
+<span id="cb24-324"><a href="#cb24-324" aria-hidden="true" tabindex="-1"></a><span class="in">t = -11.808, df = 13, p-value = 2.535e-08</span></span>
+<span id="cb24-325"><a href="#cb24-325" aria-hidden="true" tabindex="-1"></a><span class="in">alternative hypothesis: true correlation is not equal to 0</span></span>
+<span id="cb24-326"><a href="#cb24-326" aria-hidden="true" tabindex="-1"></a><span class="in">95 percent confidence interval:</span></span>
+<span id="cb24-327"><a href="#cb24-327" aria-hidden="true" tabindex="-1"></a><span class="in"> -0.9857302 -0.8707596</span></span>
+<span id="cb24-328"><a href="#cb24-328" aria-hidden="true" tabindex="-1"></a><span class="in">sample estimates:</span></span>
+<span id="cb24-329"><a href="#cb24-329" aria-hidden="true" tabindex="-1"></a><span class="in">       cor </span></span>
+<span id="cb24-330"><a href="#cb24-330" aria-hidden="true" tabindex="-1"></a><span class="in">-0.9564088 </span></span>
+<span id="cb24-331"><a href="#cb24-331" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-332"><a href="#cb24-332" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-333"><a href="#cb24-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-334"><a href="#cb24-334" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb24-335"><a href="#cb24-335" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-336"><a href="#cb24-336" aria-hidden="true" tabindex="-1"></a>Despite these limitations, this study offers valuable insights into the</span>
-<span id="cb24-337"><a href="#cb24-337" aria-hidden="true" tabindex="-1"></a>complex relationship between industrial production and water scarcity.</span>
-<span id="cb24-338"><a href="#cb24-338" aria-hidden="true" tabindex="-1"></a>While textile manufacturing is often targeted in sustainability</span>
-<span id="cb24-339"><a href="#cb24-339" aria-hidden="true" tabindex="-1"></a>conversations, this research suggests the need for multi-sectoral</span>
-<span id="cb24-340"><a href="#cb24-340" aria-hidden="true" tabindex="-1"></a>approaches to water management, taking into account agriculture, urban</span>
-<span id="cb24-341"><a href="#cb24-341" aria-hidden="true" tabindex="-1"></a>growth, industrial practices, and climate adaptation.</span>
+<span id="cb24-336"><a href="#cb24-336" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-337"><a href="#cb24-337" aria-hidden="true" tabindex="-1"></a><span class="in"># Bangladesh correlation</span></span>
+<span id="cb24-338"><a href="#cb24-338" aria-hidden="true" tabindex="-1"></a><span class="in">bangladesh_data &lt;- combined %&gt;% filter(`Country Name` == "Bangladesh", !is.na(WaterStress), !is.na(TextileValue))</span></span>
+<span id="cb24-339"><a href="#cb24-339" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-340"><a href="#cb24-340" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-341"><a href="#cb24-341" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-342"><a href="#cb24-342" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-343"><a href="#cb24-343" aria-hidden="true" tabindex="-1"></a>Future research could expand on these findings by incorporating regional</span>
-<span id="cb24-344"><a href="#cb24-344" aria-hidden="true" tabindex="-1"></a>or watershed-level data to assess localized water stress. Additionally,</span>
-<span id="cb24-345"><a href="#cb24-345" aria-hidden="true" tabindex="-1"></a>integrating water quality data—particularly related to pollution from</span>
-<span id="cb24-346"><a href="#cb24-346" aria-hidden="true" tabindex="-1"></a>textile dyeing processes—could provide a more comprehensive picture of</span>
-<span id="cb24-347"><a href="#cb24-347" aria-hidden="true" tabindex="-1"></a>the fast fashion industry’s water impacts. Supply chain analyses could</span>
-<span id="cb24-348"><a href="#cb24-348" aria-hidden="true" tabindex="-1"></a>also help trace water usage and pollution footprints across different</span>
-<span id="cb24-349"><a href="#cb24-349" aria-hidden="true" tabindex="-1"></a>stages of textile production, offering a more granular understanding of</span>
-<span id="cb24-350"><a href="#cb24-350" aria-hidden="true" tabindex="-1"></a>the industry’s true water footprint.</span>
-<span id="cb24-351"><a href="#cb24-351" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-352"><a href="#cb24-352" aria-hidden="true" tabindex="-1"></a>In summary, this study contributes to a growing body of research</span>
-<span id="cb24-353"><a href="#cb24-353" aria-hidden="true" tabindex="-1"></a>emphasizing that global environmental issues cannot be reduced to</span>
-<span id="cb24-354"><a href="#cb24-354" aria-hidden="true" tabindex="-1"></a>single-sector explanations. Textile manufacturing is an important part</span>
-<span id="cb24-355"><a href="#cb24-355" aria-hidden="true" tabindex="-1"></a>of the conversation, but water stress must be understood within a</span>
-<span id="cb24-356"><a href="#cb24-356" aria-hidden="true" tabindex="-1"></a>broader socio-environmental context that considers multiple drivers,</span>
-<span id="cb24-357"><a href="#cb24-357" aria-hidden="true" tabindex="-1"></a>including agriculture, climate, and population dynamics.</span>
+<span id="cb24-343"><a href="#cb24-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-344"><a href="#cb24-344" aria-hidden="true" tabindex="-1"></a><span class="fu">## Top 5 Countries by Average Textile Output and Water Stress</span></span>
+<span id="cb24-345"><a href="#cb24-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-346"><a href="#cb24-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-347"><a href="#cb24-347" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-348"><a href="#cb24-348" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb24-349"><a href="#cb24-349" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-350"><a href="#cb24-350" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-351"><a href="#cb24-351" aria-hidden="true" tabindex="-1"></a><span class="in">country_averages &lt;- combined %&gt;%</span></span>
+<span id="cb24-352"><a href="#cb24-352" aria-hidden="true" tabindex="-1"></a><span class="in">  group_by(`Country Name`) %&gt;%</span></span>
+<span id="cb24-353"><a href="#cb24-353" aria-hidden="true" tabindex="-1"></a><span class="in">  summarize(avg_textile = mean(TextileValue, na.rm = TRUE),</span></span>
+<span id="cb24-354"><a href="#cb24-354" aria-hidden="true" tabindex="-1"></a><span class="in">            avg_water_stress = mean(WaterStress, na.rm = TRUE)) %&gt;%</span></span>
+<span id="cb24-355"><a href="#cb24-355" aria-hidden="true" tabindex="-1"></a><span class="in">  ungroup()</span></span>
+<span id="cb24-356"><a href="#cb24-356" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-357"><a href="#cb24-357" aria-hidden="true" tabindex="-1"></a><span class="in">top_textile &lt;- country_averages %&gt;% arrange(desc(avg_textile)) %&gt;% slice(1:5)</span></span>
 <span id="cb24-358"><a href="#cb24-358" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-359"><a href="#cb24-359" aria-hidden="true" tabindex="-1"></a><span class="fu"># Conclusion</span></span>
+<span id="cb24-359"><a href="#cb24-359" aria-hidden="true" tabindex="-1"></a><span class="in">top_water_stress &lt;- country_averages %&gt;% arrange(desc(avg_water_stress)) %&gt;% slice(1:5)</span></span>
 <span id="cb24-360"><a href="#cb24-360" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-361"><a href="#cb24-361" aria-hidden="true" tabindex="-1"></a>This study set out to explore the relationship between textile</span>
-<span id="cb24-362"><a href="#cb24-362" aria-hidden="true" tabindex="-1"></a>manufacturing and water stress across countries, focusing on major fast</span>
-<span id="cb24-363"><a href="#cb24-363" aria-hidden="true" tabindex="-1"></a>fashion producers such as India, China, and Bangladesh. While textile</span>
-<span id="cb24-364"><a href="#cb24-364" aria-hidden="true" tabindex="-1"></a>production is known for its high water consumption and pollution</span>
-<span id="cb24-365"><a href="#cb24-365" aria-hidden="true" tabindex="-1"></a>potential, the analysis revealed that it is not a consistent driver of</span>
-<span id="cb24-366"><a href="#cb24-366" aria-hidden="true" tabindex="-1"></a>national water stress. Both the scatterplot and time series analyses,</span>
-<span id="cb24-367"><a href="#cb24-367" aria-hidden="true" tabindex="-1"></a>along with correlation tests, showed that water stress levels do not</span>
-<span id="cb24-368"><a href="#cb24-368" aria-hidden="true" tabindex="-1"></a>reliably correlate with textile manufacturing output.</span>
-<span id="cb24-369"><a href="#cb24-369" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-370"><a href="#cb24-370" aria-hidden="true" tabindex="-1"></a>In India and China, strong negative correlations indicated that water</span>
-<span id="cb24-371"><a href="#cb24-371" aria-hidden="true" tabindex="-1"></a>stress has increased even as textile manufacturing output declined,</span>
-<span id="cb24-372"><a href="#cb24-372" aria-hidden="true" tabindex="-1"></a>suggesting that other sectors, particularly agriculture and urban</span>
-<span id="cb24-373"><a href="#cb24-373" aria-hidden="true" tabindex="-1"></a>development, play larger roles in shaping national water pressures. At</span>
-<span id="cb24-374"><a href="#cb24-374" aria-hidden="true" tabindex="-1"></a>the global level, a very weak negative correlation further emphasized</span>
-<span id="cb24-375"><a href="#cb24-375" aria-hidden="true" tabindex="-1"></a>that textile output alone is not a reliable predictor of water stress.</span>
+<span id="cb24-361"><a href="#cb24-361" aria-hidden="true" tabindex="-1"></a><span class="in">top_textile</span></span>
+<span id="cb24-362"><a href="#cb24-362" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-363"><a href="#cb24-363" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-364"><a href="#cb24-364" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
+<span id="cb24-365"><a href="#cb24-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-366"><a href="#cb24-366" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-367"><a href="#cb24-367" aria-hidden="true" tabindex="-1"></a><span class="in"># A tibble: 5 × 3</span></span>
+<span id="cb24-368"><a href="#cb24-368" aria-hidden="true" tabindex="-1"></a><span class="in">  `Country Name`       avg_textile avg_water_stress</span></span>
+<span id="cb24-369"><a href="#cb24-369" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;chr&gt;                      &lt;dbl&gt;            &lt;dbl&gt;</span></span>
+<span id="cb24-370"><a href="#cb24-370" aria-hidden="true" tabindex="-1"></a><span class="in">1 Macao SAR, China            55.5           NaN   </span></span>
+<span id="cb24-371"><a href="#cb24-371" aria-hidden="true" tabindex="-1"></a><span class="in">2 Bangladesh                  42.3             5.72</span></span>
+<span id="cb24-372"><a href="#cb24-372" aria-hidden="true" tabindex="-1"></a><span class="in">3 Syrian Arab Republic        37.4           105.  </span></span>
+<span id="cb24-373"><a href="#cb24-373" aria-hidden="true" tabindex="-1"></a><span class="in">4 Cambodia                    37.2             1.04</span></span>
+<span id="cb24-374"><a href="#cb24-374" aria-hidden="true" tabindex="-1"></a><span class="in">5 Pakistan                    32.9           105.  </span></span>
+<span id="cb24-375"><a href="#cb24-375" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb24-376"><a href="#cb24-376" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-377"><a href="#cb24-377" aria-hidden="true" tabindex="-1"></a>The top textile-producing countries and the top water-stressed nations</span>
-<span id="cb24-378"><a href="#cb24-378" aria-hidden="true" tabindex="-1"></a>were largely distinct, reinforcing that regional factors such as</span>
-<span id="cb24-379"><a href="#cb24-379" aria-hidden="true" tabindex="-1"></a>climate, resource management, and sectoral water use have greater</span>
-<span id="cb24-380"><a href="#cb24-380" aria-hidden="true" tabindex="-1"></a>influence on water scarcity.</span>
-<span id="cb24-381"><a href="#cb24-381" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-382"><a href="#cb24-382" aria-hidden="true" tabindex="-1"></a>These findings highlight the complexity of water resource management and</span>
-<span id="cb24-383"><a href="#cb24-383" aria-hidden="true" tabindex="-1"></a>suggest that addressing global water stress requires a multi-sectoral</span>
-<span id="cb24-384"><a href="#cb24-384" aria-hidden="true" tabindex="-1"></a>approach, focusing not only on industrial output, but also on</span>
-<span id="cb24-385"><a href="#cb24-385" aria-hidden="true" tabindex="-1"></a>agriculture, urbanization, and climate adaptation strategies. While</span>
-<span id="cb24-386"><a href="#cb24-386" aria-hidden="true" tabindex="-1"></a>textile production remains a key area for sustainability improvements,</span>
-<span id="cb24-387"><a href="#cb24-387" aria-hidden="true" tabindex="-1"></a>including reducing water pollution from dyeing and improving water</span>
-<span id="cb24-388"><a href="#cb24-388" aria-hidden="true" tabindex="-1"></a>efficiency, it should be understood as part of a broader system of water</span>
-<span id="cb24-389"><a href="#cb24-389" aria-hidden="true" tabindex="-1"></a>use.</span>
-<span id="cb24-390"><a href="#cb24-390" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-391"><a href="#cb24-391" aria-hidden="true" tabindex="-1"></a>Moving forward, improving data completeness and consistency across</span>
-<span id="cb24-392"><a href="#cb24-392" aria-hidden="true" tabindex="-1"></a>countries will be critical to fully understanding global water stress</span>
-<span id="cb24-393"><a href="#cb24-393" aria-hidden="true" tabindex="-1"></a>patterns. Future research should also explore regional water stress</span>
-<span id="cb24-394"><a href="#cb24-394" aria-hidden="true" tabindex="-1"></a>dynamics, supply chain impacts, and water quality to build a more</span>
-<span id="cb24-395"><a href="#cb24-395" aria-hidden="true" tabindex="-1"></a>comprehensive view of the fast fashion industry’s environmental</span>
-<span id="cb24-396"><a href="#cb24-396" aria-hidden="true" tabindex="-1"></a>footprint.</span>
+<span id="cb24-377"><a href="#cb24-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-378"><a href="#cb24-378" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-379"><a href="#cb24-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-380"><a href="#cb24-380" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-381"><a href="#cb24-381" aria-hidden="true" tabindex="-1"></a><span class="in">top_water_stress</span></span>
+<span id="cb24-382"><a href="#cb24-382" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-383"><a href="#cb24-383" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-384"><a href="#cb24-384" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
+<span id="cb24-385"><a href="#cb24-385" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-386"><a href="#cb24-386" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-387"><a href="#cb24-387" aria-hidden="true" tabindex="-1"></a><span class="in"># A tibble: 5 × 3</span></span>
+<span id="cb24-388"><a href="#cb24-388" aria-hidden="true" tabindex="-1"></a><span class="in">  `Country Name`       avg_textile avg_water_stress</span></span>
+<span id="cb24-389"><a href="#cb24-389" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;chr&gt;                      &lt;dbl&gt;            &lt;dbl&gt;</span></span>
+<span id="cb24-390"><a href="#cb24-390" aria-hidden="true" tabindex="-1"></a><span class="in">1 Kuwait                      4.55            2612.</span></span>
+<span id="cb24-391"><a href="#cb24-391" aria-hidden="true" tabindex="-1"></a><span class="in">2 United Arab Emirates        3.42            1373.</span></span>
+<span id="cb24-392"><a href="#cb24-392" aria-hidden="true" tabindex="-1"></a><span class="in">3 Saudi Arabia                3.28             866.</span></span>
+<span id="cb24-393"><a href="#cb24-393" aria-hidden="true" tabindex="-1"></a><span class="in">4 Libya                       6.38             603.</span></span>
+<span id="cb24-394"><a href="#cb24-394" aria-hidden="true" tabindex="-1"></a><span class="in">5 Qatar                       1.52             358.</span></span>
+<span id="cb24-395"><a href="#cb24-395" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-396"><a href="#cb24-396" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-397"><a href="#cb24-397" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-398"><a href="#cb24-398" aria-hidden="true" tabindex="-1"></a>In conclusion, while fast fashion remains a significant environmental</span>
-<span id="cb24-399"><a href="#cb24-399" aria-hidden="true" tabindex="-1"></a>concern, this study emphasizes that water stress is a multi-dimensional</span>
-<span id="cb24-400"><a href="#cb24-400" aria-hidden="true" tabindex="-1"></a>challenge requiring holistic solutions. Sustainable water management</span>
-<span id="cb24-401"><a href="#cb24-401" aria-hidden="true" tabindex="-1"></a>will depend on integrating sectoral demands, addressing local contexts,</span>
-<span id="cb24-402"><a href="#cb24-402" aria-hidden="true" tabindex="-1"></a>and collaborating across industries to ensure that water resources are</span>
-<span id="cb24-403"><a href="#cb24-403" aria-hidden="true" tabindex="-1"></a>protected for both current and future generations.</span>
-</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb24-398"><a href="#cb24-398" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-399"><a href="#cb24-399" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-400"><a href="#cb24-400" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-401"><a href="#cb24-401" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-402"><a href="#cb24-402" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-403"><a href="#cb24-403" aria-hidden="true" tabindex="-1"></a><span class="fu">## Global Correlation Test</span></span>
+<span id="cb24-404"><a href="#cb24-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-405"><a href="#cb24-405" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-406"><a href="#cb24-406" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-407"><a href="#cb24-407" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb24-408"><a href="#cb24-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-409"><a href="#cb24-409" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code .hidden}</span></span>
+<span id="cb24-410"><a href="#cb24-410" aria-hidden="true" tabindex="-1"></a><span class="in">global_corr_data &lt;- combined %&gt;% filter(!is.na(WaterStress), !is.na(TextileValue))</span></span>
+<span id="cb24-411"><a href="#cb24-411" aria-hidden="true" tabindex="-1"></a><span class="in">cor.test(global_corr_data$TextileValue, global_corr_data$WaterStress)</span></span>
+<span id="cb24-412"><a href="#cb24-412" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-413"><a href="#cb24-413" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-414"><a href="#cb24-414" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
+<span id="cb24-415"><a href="#cb24-415" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-416"><a href="#cb24-416" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-417"><a href="#cb24-417" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-418"><a href="#cb24-418" aria-hidden="true" tabindex="-1"></a><span class="in">    Pearson's product-moment correlation</span></span>
+<span id="cb24-419"><a href="#cb24-419" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-420"><a href="#cb24-420" aria-hidden="true" tabindex="-1"></a><span class="in">data:  global_corr_data$TextileValue and global_corr_data$WaterStress</span></span>
+<span id="cb24-421"><a href="#cb24-421" aria-hidden="true" tabindex="-1"></a><span class="in">t = -3.5162, df = 1853, p-value = 0.0004483</span></span>
+<span id="cb24-422"><a href="#cb24-422" aria-hidden="true" tabindex="-1"></a><span class="in">alternative hypothesis: true correlation is not equal to 0</span></span>
+<span id="cb24-423"><a href="#cb24-423" aria-hidden="true" tabindex="-1"></a><span class="in">95 percent confidence interval:</span></span>
+<span id="cb24-424"><a href="#cb24-424" aria-hidden="true" tabindex="-1"></a><span class="in"> -0.12645593 -0.03603367</span></span>
+<span id="cb24-425"><a href="#cb24-425" aria-hidden="true" tabindex="-1"></a><span class="in">sample estimates:</span></span>
+<span id="cb24-426"><a href="#cb24-426" aria-hidden="true" tabindex="-1"></a><span class="in">        cor </span></span>
+<span id="cb24-427"><a href="#cb24-427" aria-hidden="true" tabindex="-1"></a><span class="in">-0.08141232 </span></span>
+<span id="cb24-428"><a href="#cb24-428" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-429"><a href="#cb24-429" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-430"><a href="#cb24-430" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-431"><a href="#cb24-431" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-432"><a href="#cb24-432" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-433"><a href="#cb24-433" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-434"><a href="#cb24-434" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-435"><a href="#cb24-435" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-436"><a href="#cb24-436" aria-hidden="true" tabindex="-1"></a><span class="fu"># Discussion</span></span>
+<span id="cb24-437"><a href="#cb24-437" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-438"><a href="#cb24-438" aria-hidden="true" tabindex="-1"></a>This study aimed to examine the relationship between textile</span>
+<span id="cb24-439"><a href="#cb24-439" aria-hidden="true" tabindex="-1"></a>manufacturing and water stress across countries, focusing particularly</span>
+<span id="cb24-440"><a href="#cb24-440" aria-hidden="true" tabindex="-1"></a>on India, China, and Bangladesh—nations commonly associated with fast</span>
+<span id="cb24-441"><a href="#cb24-441" aria-hidden="true" tabindex="-1"></a>fashion production. The hypothesis was that higher textile output would</span>
+<span id="cb24-442"><a href="#cb24-442" aria-hidden="true" tabindex="-1"></a>correlate with higher water stress at the national level due to the</span>
+<span id="cb24-443"><a href="#cb24-443" aria-hidden="true" tabindex="-1"></a>water-intensive nature of cotton farming, textile dyeing, and fabric</span>
+<span id="cb24-444"><a href="#cb24-444" aria-hidden="true" tabindex="-1"></a>production. However, the results of this analysis reveal a much more</span>
+<span id="cb24-445"><a href="#cb24-445" aria-hidden="true" tabindex="-1"></a>complex relationship, with textile output alone not consistently</span>
+<span id="cb24-446"><a href="#cb24-446" aria-hidden="true" tabindex="-1"></a>explaining national water stress patterns.</span>
+<span id="cb24-447"><a href="#cb24-447" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-448"><a href="#cb24-448" aria-hidden="true" tabindex="-1"></a>The scatterplot analysis for 2018, after filtering extreme water stress</span>
+<span id="cb24-449"><a href="#cb24-449" aria-hidden="true" tabindex="-1"></a>outliers (above 300%), highlighted that Egypt, Uzbekistan, and Sri Lanka</span>
+<span id="cb24-450"><a href="#cb24-450" aria-hidden="true" tabindex="-1"></a>had the highest combined textile output and water stress, while China,</span>
+<span id="cb24-451"><a href="#cb24-451" aria-hidden="true" tabindex="-1"></a>India, and Bangladesh—although top textile producers—did not exhibit the</span>
+<span id="cb24-452"><a href="#cb24-452" aria-hidden="true" tabindex="-1"></a>highest water stress levels. This finding challenges the assumption that</span>
+<span id="cb24-453"><a href="#cb24-453" aria-hidden="true" tabindex="-1"></a>fast fashion-heavy nations automatically face higher water pressures.</span>
+<span id="cb24-454"><a href="#cb24-454" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-455"><a href="#cb24-455" aria-hidden="true" tabindex="-1"></a>This outcome underscores that water stress is influenced by multiple</span>
+<span id="cb24-456"><a href="#cb24-456" aria-hidden="true" tabindex="-1"></a>factors beyond textile manufacturing. For instance,</span>
+<span id="cb24-457"><a href="#cb24-457" aria-hidden="true" tabindex="-1"></a>agriculture—particularly water-intensive crops—often consumes far more</span>
+<span id="cb24-458"><a href="#cb24-458" aria-hidden="true" tabindex="-1"></a>water than industry. Climate variability, population growth,</span>
+<span id="cb24-459"><a href="#cb24-459" aria-hidden="true" tabindex="-1"></a>urbanization, and government water policies all contribute to water</span>
+<span id="cb24-460"><a href="#cb24-460" aria-hidden="true" tabindex="-1"></a>demand and scarcity. The case of Bangladesh illustrates this well.</span>
+<span id="cb24-461"><a href="#cb24-461" aria-hidden="true" tabindex="-1"></a>Despite being a global leader in textile exports, Bangladesh maintains</span>
+<span id="cb24-462"><a href="#cb24-462" aria-hidden="true" tabindex="-1"></a>relatively low water stress (5.7% average), while other textile</span>
+<span id="cb24-463"><a href="#cb24-463" aria-hidden="true" tabindex="-1"></a>producers like Syria and Pakistan experience high water stress (above</span>
+<span id="cb24-464"><a href="#cb24-464" aria-hidden="true" tabindex="-1"></a>100%), withdrawing freshwater at or beyond renewable levels.</span>
+<span id="cb24-465"><a href="#cb24-465" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-466"><a href="#cb24-466" aria-hidden="true" tabindex="-1"></a>The time series analysis for India, China, and Bangladesh provided</span>
+<span id="cb24-467"><a href="#cb24-467" aria-hidden="true" tabindex="-1"></a>additional insight. India’s water stress has steadily increased over</span>
+<span id="cb24-468"><a href="#cb24-468" aria-hidden="true" tabindex="-1"></a>time, despite a decline in textile manufacturing output. This suggests</span>
+<span id="cb24-469"><a href="#cb24-469" aria-hidden="true" tabindex="-1"></a>that agriculture, particularly rice and sugarcane production, along with</span>
+<span id="cb24-470"><a href="#cb24-470" aria-hidden="true" tabindex="-1"></a>urban water demands and climate-related shortages, are likely driving</span>
+<span id="cb24-471"><a href="#cb24-471" aria-hidden="true" tabindex="-1"></a>water stress in India. China’s water stress remained relatively stable,</span>
+<span id="cb24-472"><a href="#cb24-472" aria-hidden="true" tabindex="-1"></a>even as textile output decreased gradually. Bangladesh showed limited</span>
+<span id="cb24-473"><a href="#cb24-473" aria-hidden="true" tabindex="-1"></a>data, but available trends suggested low water stress relative to its</span>
+<span id="cb24-474"><a href="#cb24-474" aria-hidden="true" tabindex="-1"></a>textile manufacturing levels.</span>
+<span id="cb24-475"><a href="#cb24-475" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-476"><a href="#cb24-476" aria-hidden="true" tabindex="-1"></a>These trends were further reinforced by correlation analyses. India and</span>
+<span id="cb24-477"><a href="#cb24-477" aria-hidden="true" tabindex="-1"></a>China both exhibited strong negative correlations between textile</span>
+<span id="cb24-478"><a href="#cb24-478" aria-hidden="true" tabindex="-1"></a>manufacturing and water stress (India: r = -0.97, China: r = -0.96, both</span>
+<span id="cb24-479"><a href="#cb24-479" aria-hidden="true" tabindex="-1"></a>p <span class="sc">\&lt;</span> 0.001). This means that as textile output declined, water stress</span>
+<span id="cb24-480"><a href="#cb24-480" aria-hidden="true" tabindex="-1"></a>increased in both countries. While counterintuitive, these results align</span>
+<span id="cb24-481"><a href="#cb24-481" aria-hidden="true" tabindex="-1"></a>with the time series findings, suggesting that other sectors or broader</span>
+<span id="cb24-482"><a href="#cb24-482" aria-hidden="true" tabindex="-1"></a>environmental changes—such as urbanization or climate factors—are</span>
+<span id="cb24-483"><a href="#cb24-483" aria-hidden="true" tabindex="-1"></a>driving national water pressures more than textile output.</span>
+<span id="cb24-484"><a href="#cb24-484" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-485"><a href="#cb24-485" aria-hidden="true" tabindex="-1"></a>For Bangladesh, the correlation test could not be performed due to</span>
+<span id="cb24-486"><a href="#cb24-486" aria-hidden="true" tabindex="-1"></a>limited overlapping data between the two variables. This reflects one of</span>
+<span id="cb24-487"><a href="#cb24-487" aria-hidden="true" tabindex="-1"></a>the challenges in working with global datasets—inconsistent data</span>
+<span id="cb24-488"><a href="#cb24-488" aria-hidden="true" tabindex="-1"></a>availability across countries and years. Even though Bangladesh is a</span>
+<span id="cb24-489"><a href="#cb24-489" aria-hidden="true" tabindex="-1"></a>major textile producer, its water stress patterns could not be fully</span>
+<span id="cb24-490"><a href="#cb24-490" aria-hidden="true" tabindex="-1"></a>assessed due to gaps in reporting.</span>
+<span id="cb24-491"><a href="#cb24-491" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-492"><a href="#cb24-492" aria-hidden="true" tabindex="-1"></a>Despite the limitations in water stress data for Bangladesh, external literature highlights the environmental impact of its textile sector. For example, a 2024 study titled Water Pollution and the Textile Industry in Bangladesh: Flawed Corporate Practices or Restrictive Opportunities? <span class="co">[</span><span class="ot">@article</span><span class="co">]</span> details how untreated wastewater from dyeing facilities has severely degraded water quality in Dhaka’s rivers. The study argues that while global brands pressure factories to reduce pollution, local infrastructure and regulatory gaps often leave producers with limited means to adopt cleaner practices. This reinforces the idea that low national water stress levels can mask serious regional water quality issues, especially in industrial clusters</span>
+<span id="cb24-493"><a href="#cb24-493" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-494"><a href="#cb24-494" aria-hidden="true" tabindex="-1"></a>Expanding the scope to a global analysis, a correlation test across all</span>
+<span id="cb24-495"><a href="#cb24-495" aria-hidden="true" tabindex="-1"></a>countries and years produced a very weak negative correlation (r =</span>
+<span id="cb24-496"><a href="#cb24-496" aria-hidden="true" tabindex="-1"></a>-0.08, p <span class="sc">\&lt;</span> 0.001) between textile manufacturing and water stress. While</span>
+<span id="cb24-497"><a href="#cb24-497" aria-hidden="true" tabindex="-1"></a>statistically significant because of the large sample size, the</span>
+<span id="cb24-498"><a href="#cb24-498" aria-hidden="true" tabindex="-1"></a>relationship is practically negligible, suggesting that globally,</span>
+<span id="cb24-499"><a href="#cb24-499" aria-hidden="true" tabindex="-1"></a>textile output is not a reliable predictor of water stress. This</span>
+<span id="cb24-500"><a href="#cb24-500" aria-hidden="true" tabindex="-1"></a>supports the idea that local factors, such as climate, agricultural</span>
+<span id="cb24-501"><a href="#cb24-501" aria-hidden="true" tabindex="-1"></a>practices, and water policies, heavily influence national water</span>
+<span id="cb24-502"><a href="#cb24-502" aria-hidden="true" tabindex="-1"></a>conditions.</span>
+<span id="cb24-503"><a href="#cb24-503" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-504"><a href="#cb24-504" aria-hidden="true" tabindex="-1"></a>To further explore this relationship, the study examined the top five</span>
+<span id="cb24-505"><a href="#cb24-505" aria-hidden="true" tabindex="-1"></a>countries by average textile manufacturing output and average water</span>
+<span id="cb24-506"><a href="#cb24-506" aria-hidden="true" tabindex="-1"></a>stress. Among the top textile producers were Macao SAR (China),</span>
+<span id="cb24-507"><a href="#cb24-507" aria-hidden="true" tabindex="-1"></a>Bangladesh, Syria, Cambodia, and Pakistan. These countries had varying</span>
+<span id="cb24-508"><a href="#cb24-508" aria-hidden="true" tabindex="-1"></a>levels of water stress, with Bangladesh maintaining low water stress and</span>
+<span id="cb24-509"><a href="#cb24-509" aria-hidden="true" tabindex="-1"></a>Syria and Pakistan experiencing high water stress (above 100%).</span>
+<span id="cb24-510"><a href="#cb24-510" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-511"><a href="#cb24-511" aria-hidden="true" tabindex="-1"></a>Conversely, the top five water-stressed countries—Kuwait, United Arab</span>
+<span id="cb24-512"><a href="#cb24-512" aria-hidden="true" tabindex="-1"></a>Emirates, Saudi Arabia, Libya, and Qatar—are predominantly arid nations</span>
+<span id="cb24-513"><a href="#cb24-513" aria-hidden="true" tabindex="-1"></a>with extremely high water stress levels (ranging from 358% to 2612%).</span>
+<span id="cb24-514"><a href="#cb24-514" aria-hidden="true" tabindex="-1"></a>However, these countries reported low textile manufacturing output</span>
+<span id="cb24-515"><a href="#cb24-515" aria-hidden="true" tabindex="-1"></a>(below 6.5%). This contrast demonstrates that water scarcity in these</span>
+<span id="cb24-516"><a href="#cb24-516" aria-hidden="true" tabindex="-1"></a>regions is likely driven by climate conditions and urban/agricultural</span>
+<span id="cb24-517"><a href="#cb24-517" aria-hidden="true" tabindex="-1"></a>demands, rather than textile production.</span>
+<span id="cb24-518"><a href="#cb24-518" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-519"><a href="#cb24-519" aria-hidden="true" tabindex="-1"></a>These findings align with previous research emphasizing the need for</span>
+<span id="cb24-520"><a href="#cb24-520" aria-hidden="true" tabindex="-1"></a>context-specific analyses when addressing water stress. For example,</span>
+<span id="cb24-521"><a href="#cb24-521" aria-hidden="true" tabindex="-1"></a>countries like India and China may face water shortages driven by</span>
+<span id="cb24-522"><a href="#cb24-522" aria-hidden="true" tabindex="-1"></a>agriculture, urban expansion, and climate variability, whereas Middle</span>
+<span id="cb24-523"><a href="#cb24-523" aria-hidden="true" tabindex="-1"></a>Eastern nations contend with naturally scarce water supplies.</span>
+<span id="cb24-524"><a href="#cb24-524" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-525"><a href="#cb24-525" aria-hidden="true" tabindex="-1"></a>This study challenges the narrative that fast fashion alone is a primary</span>
+<span id="cb24-526"><a href="#cb24-526" aria-hidden="true" tabindex="-1"></a>contributor to water stress. While textile manufacturing certainly has a</span>
+<span id="cb24-527"><a href="#cb24-527" aria-hidden="true" tabindex="-1"></a>significant environmental footprint, the data shows that other sectors,</span>
+<span id="cb24-528"><a href="#cb24-528" aria-hidden="true" tabindex="-1"></a>particularly agriculture, often exert greater pressure on water</span>
+<span id="cb24-529"><a href="#cb24-529" aria-hidden="true" tabindex="-1"></a>resources. Water stress is a multifaceted issue, influenced by sectoral</span>
+<span id="cb24-530"><a href="#cb24-530" aria-hidden="true" tabindex="-1"></a>water demands, regional climates, technological efficiencies, and policy</span>
+<span id="cb24-531"><a href="#cb24-531" aria-hidden="true" tabindex="-1"></a>decisions.</span>
+<span id="cb24-532"><a href="#cb24-532" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-533"><a href="#cb24-533" aria-hidden="true" tabindex="-1"></a>The analysis also highlighted data limitations, particularly with</span>
+<span id="cb24-534"><a href="#cb24-534" aria-hidden="true" tabindex="-1"></a>Bangladesh, where incomplete records prevented a full correlation</span>
+<span id="cb24-535"><a href="#cb24-535" aria-hidden="true" tabindex="-1"></a>analysis. This reflects a broader challenge with global environmental</span>
+<span id="cb24-536"><a href="#cb24-536" aria-hidden="true" tabindex="-1"></a>datasets: inconsistent data collection and reporting. Reliable,</span>
+<span id="cb24-537"><a href="#cb24-537" aria-hidden="true" tabindex="-1"></a>comprehensive data is crucial for accurate assessments of global</span>
+<span id="cb24-538"><a href="#cb24-538" aria-hidden="true" tabindex="-1"></a>resource use patterns. Improvements in data standardization and</span>
+<span id="cb24-539"><a href="#cb24-539" aria-hidden="true" tabindex="-1"></a>reporting are essential for advancing research and informing water</span>
+<span id="cb24-540"><a href="#cb24-540" aria-hidden="true" tabindex="-1"></a>management strategies.</span>
+<span id="cb24-541"><a href="#cb24-541" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-542"><a href="#cb24-542" aria-hidden="true" tabindex="-1"></a>Despite these limitations, this study offers valuable insights into the</span>
+<span id="cb24-543"><a href="#cb24-543" aria-hidden="true" tabindex="-1"></a>complex relationship between industrial production and water scarcity.</span>
+<span id="cb24-544"><a href="#cb24-544" aria-hidden="true" tabindex="-1"></a>While textile manufacturing is often targeted in sustainability</span>
+<span id="cb24-545"><a href="#cb24-545" aria-hidden="true" tabindex="-1"></a>conversations, this research suggests the need for multi-sectoral</span>
+<span id="cb24-546"><a href="#cb24-546" aria-hidden="true" tabindex="-1"></a>approaches to water management, taking into account agriculture, urban</span>
+<span id="cb24-547"><a href="#cb24-547" aria-hidden="true" tabindex="-1"></a>growth, industrial practices, and climate adaptation.</span>
+<span id="cb24-548"><a href="#cb24-548" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-549"><a href="#cb24-549" aria-hidden="true" tabindex="-1"></a>Future research could expand on these findings by incorporating regional</span>
+<span id="cb24-550"><a href="#cb24-550" aria-hidden="true" tabindex="-1"></a>or watershed-level data to assess localized water stress. Additionally,</span>
+<span id="cb24-551"><a href="#cb24-551" aria-hidden="true" tabindex="-1"></a>integrating water quality data—particularly related to pollution from</span>
+<span id="cb24-552"><a href="#cb24-552" aria-hidden="true" tabindex="-1"></a>textile dyeing processes—could provide a more comprehensive picture of</span>
+<span id="cb24-553"><a href="#cb24-553" aria-hidden="true" tabindex="-1"></a>the fast fashion industry’s water impacts. Supply chain analyses could</span>
+<span id="cb24-554"><a href="#cb24-554" aria-hidden="true" tabindex="-1"></a>also help trace water usage and pollution footprints across different</span>
+<span id="cb24-555"><a href="#cb24-555" aria-hidden="true" tabindex="-1"></a>stages of textile production, offering a more granular understanding of</span>
+<span id="cb24-556"><a href="#cb24-556" aria-hidden="true" tabindex="-1"></a>the industry’s true water footprint.</span>
+<span id="cb24-557"><a href="#cb24-557" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-558"><a href="#cb24-558" aria-hidden="true" tabindex="-1"></a>In summary, this study contributes to a growing body of research</span>
+<span id="cb24-559"><a href="#cb24-559" aria-hidden="true" tabindex="-1"></a>emphasizing that global environmental issues cannot be reduced to</span>
+<span id="cb24-560"><a href="#cb24-560" aria-hidden="true" tabindex="-1"></a>single-sector explanations. Textile manufacturing is an important part</span>
+<span id="cb24-561"><a href="#cb24-561" aria-hidden="true" tabindex="-1"></a>of the conversation, but water stress must be understood within a</span>
+<span id="cb24-562"><a href="#cb24-562" aria-hidden="true" tabindex="-1"></a>broader socio-environmental context that considers multiple drivers,</span>
+<span id="cb24-563"><a href="#cb24-563" aria-hidden="true" tabindex="-1"></a>including agriculture, climate, and population dynamics.</span>
+<span id="cb24-564"><a href="#cb24-564" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-565"><a href="#cb24-565" aria-hidden="true" tabindex="-1"></a><span class="fu"># Conclusion</span></span>
+<span id="cb24-566"><a href="#cb24-566" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-567"><a href="#cb24-567" aria-hidden="true" tabindex="-1"></a>This study set out to explore the relationship between textile</span>
+<span id="cb24-568"><a href="#cb24-568" aria-hidden="true" tabindex="-1"></a>manufacturing and water stress across countries, focusing on major fast</span>
+<span id="cb24-569"><a href="#cb24-569" aria-hidden="true" tabindex="-1"></a>fashion producers such as India, China, and Bangladesh. While textile</span>
+<span id="cb24-570"><a href="#cb24-570" aria-hidden="true" tabindex="-1"></a>production is known for its high water consumption and pollution</span>
+<span id="cb24-571"><a href="#cb24-571" aria-hidden="true" tabindex="-1"></a>potential, the analysis revealed that it is not a consistent driver of</span>
+<span id="cb24-572"><a href="#cb24-572" aria-hidden="true" tabindex="-1"></a>national water stress. Both the scatterplot and time series analyses,</span>
+<span id="cb24-573"><a href="#cb24-573" aria-hidden="true" tabindex="-1"></a>along with correlation tests, showed that water stress levels do not</span>
+<span id="cb24-574"><a href="#cb24-574" aria-hidden="true" tabindex="-1"></a>reliably correlate with textile manufacturing output.</span>
+<span id="cb24-575"><a href="#cb24-575" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-576"><a href="#cb24-576" aria-hidden="true" tabindex="-1"></a>In India and China, strong negative correlations indicated that water</span>
+<span id="cb24-577"><a href="#cb24-577" aria-hidden="true" tabindex="-1"></a>stress has increased even as textile manufacturing output declined,</span>
+<span id="cb24-578"><a href="#cb24-578" aria-hidden="true" tabindex="-1"></a>suggesting that other sectors, particularly agriculture and urban</span>
+<span id="cb24-579"><a href="#cb24-579" aria-hidden="true" tabindex="-1"></a>development, play larger roles in shaping national water pressures. At</span>
+<span id="cb24-580"><a href="#cb24-580" aria-hidden="true" tabindex="-1"></a>the global level, a very weak negative correlation further emphasized</span>
+<span id="cb24-581"><a href="#cb24-581" aria-hidden="true" tabindex="-1"></a>that textile output alone is not a reliable predictor of water stress.</span>
+<span id="cb24-582"><a href="#cb24-582" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-583"><a href="#cb24-583" aria-hidden="true" tabindex="-1"></a>The top textile-producing countries and the top water-stressed nations</span>
+<span id="cb24-584"><a href="#cb24-584" aria-hidden="true" tabindex="-1"></a>were largely distinct, reinforcing that regional factors such as</span>
+<span id="cb24-585"><a href="#cb24-585" aria-hidden="true" tabindex="-1"></a>climate, resource management, and sectoral water use have greater</span>
+<span id="cb24-586"><a href="#cb24-586" aria-hidden="true" tabindex="-1"></a>influence on water scarcity.</span>
+<span id="cb24-587"><a href="#cb24-587" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-588"><a href="#cb24-588" aria-hidden="true" tabindex="-1"></a>These findings highlight the complexity of water resource management and</span>
+<span id="cb24-589"><a href="#cb24-589" aria-hidden="true" tabindex="-1"></a>suggest that addressing global water stress requires a multi-sectoral</span>
+<span id="cb24-590"><a href="#cb24-590" aria-hidden="true" tabindex="-1"></a>approach, focusing not only on industrial output, but also on</span>
+<span id="cb24-591"><a href="#cb24-591" aria-hidden="true" tabindex="-1"></a>agriculture, urbanization, and climate adaptation strategies. While</span>
+<span id="cb24-592"><a href="#cb24-592" aria-hidden="true" tabindex="-1"></a>textile production remains a key area for sustainability improvements,</span>
+<span id="cb24-593"><a href="#cb24-593" aria-hidden="true" tabindex="-1"></a>including reducing water pollution from dyeing and improving water</span>
+<span id="cb24-594"><a href="#cb24-594" aria-hidden="true" tabindex="-1"></a>efficiency, it should be understood as part of a broader system of water</span>
+<span id="cb24-595"><a href="#cb24-595" aria-hidden="true" tabindex="-1"></a>use.</span>
+<span id="cb24-596"><a href="#cb24-596" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-597"><a href="#cb24-597" aria-hidden="true" tabindex="-1"></a>Moving forward, improving data completeness and consistency across</span>
+<span id="cb24-598"><a href="#cb24-598" aria-hidden="true" tabindex="-1"></a>countries will be critical to fully understanding global water stress</span>
+<span id="cb24-599"><a href="#cb24-599" aria-hidden="true" tabindex="-1"></a>patterns. Future research should also explore regional water stress</span>
+<span id="cb24-600"><a href="#cb24-600" aria-hidden="true" tabindex="-1"></a>dynamics, supply chain impacts, and water quality to build a more</span>
+<span id="cb24-601"><a href="#cb24-601" aria-hidden="true" tabindex="-1"></a>comprehensive view of the fast fashion industry’s environmental</span>
+<span id="cb24-602"><a href="#cb24-602" aria-hidden="true" tabindex="-1"></a>footprint.</span>
+<span id="cb24-603"><a href="#cb24-603" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-604"><a href="#cb24-604" aria-hidden="true" tabindex="-1"></a>In conclusion, while fast fashion remains a significant environmental</span>
+<span id="cb24-605"><a href="#cb24-605" aria-hidden="true" tabindex="-1"></a>concern, this study emphasizes that water stress is a multi-dimensional</span>
+<span id="cb24-606"><a href="#cb24-606" aria-hidden="true" tabindex="-1"></a>challenge requiring holistic solutions. Sustainable water management</span>
+<span id="cb24-607"><a href="#cb24-607" aria-hidden="true" tabindex="-1"></a>will depend on integrating sectoral demands, addressing local contexts,</span>
+<span id="cb24-608"><a href="#cb24-608" aria-hidden="true" tabindex="-1"></a>and collaborating across industries to ensure that water resources are</span>
+<span id="cb24-609"><a href="#cb24-609" aria-hidden="true" tabindex="-1"></a>protected for both current and future generations.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;

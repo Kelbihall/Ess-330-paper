@@ -28,6 +28,8 @@ editor:
     wrap: 72
 ---
 
+
+
 # Introduction
 
 The fast fashion industry is among the most polluting in the world,
@@ -91,8 +93,33 @@ To understand how these trends changed over time, we used time series visualizat
 
 The results showed that there is not a strong or consistent relationship between textile manufacturing and water stress at the national level. In 2018, countries like Egypt, Uzbekistan, and Sri Lanka had the highest combined levels of textile output and water stress, while major fast fashion producers like India, China, and Bangladesh did not. Time series analysis revealed that in India and China, water stress increased over time even as textile manufacturing declined, suggesting other factors such as agriculture, population growth, or climate conditions are driving water scarcity. Bangladesh had high textile manufacturing and low water stress, but incomplete data for many years limits what we can conclude. Overall, correlation tests confirmed these trends, with strong negative correlations in India and China and a very weak global correlation. The top countries for textile production and those with the highest water stress were mostly different, reinforcing that water stress is likely shaped by broader environmental and economic conditions rather than textile manufacturing alone.
 
-```{r}
+
+
+::: {.cell}
+
+```{.r .cell-code .hidden}
 library(tidyverse)
+```
+
+::: {.cell-output .cell-output-stderr .hidden}
+
+```
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.2     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+```
+
+
+:::
+
+```{.r .cell-code .hidden}
 library(readxl)
 library(dplyr)
 
@@ -109,24 +136,78 @@ textiles_long <- textiles %>%
 
 combined <- left_join(water_long, textiles_long, by = c("Country Name", "Country Code", "Year")) %>%
   mutate(Year = as.numeric(Year))
-
 ```
+:::
 
-```{r}
+::: {.cell}
+
+```{.r .cell-code .hidden}
 # Preview the textile manufacturing data
 textiles_long %>%
   filter(!is.na(TextileValue)) %>%
   head(10)
 ```
 
-```{r}
+::: {.cell-output .cell-output-stdout}
+
+```
+# A tibble: 10 × 4
+   `Country Name` `Country Code` Year  TextileValue
+   <chr>          <chr>          <chr>        <dbl>
+ 1 Albania        ALB            2010          26.4
+ 2 Albania        ALB            2011          31.5
+ 3 Albania        ALB            2012          27.3
+ 4 Albania        ALB            2013          31.1
+ 5 Albania        ALB            2014          32.7
+ 6 Albania        ALB            2015          32.4
+ 7 Albania        ALB            2016          33.7
+ 8 Albania        ALB            2017          34.9
+ 9 Albania        ALB            2018          36.6
+10 Albania        ALB            2019          36.4
+```
+
+
+:::
+:::
+
+::: {.cell}
+
+```{.r .cell-code .hidden}
 # Count missing values
 cat("Missing Water Stress values:", sum(is.na(water_long$WaterStress)), "\n")
+```
+
+::: {.cell-output .cell-output-stdout}
+
+```
+Missing Water Stress values: 11000 
+```
+
+
+:::
+
+```{.r .cell-code .hidden}
 cat("Missing Textile Manufacturing values:", sum(is.na(textiles_long$TextileValue)), "\n")
 ```
 
+::: {.cell-output .cell-output-stdout}
+
+```
+Missing Textile Manufacturing values: 13692 
+```
+
+
+:::
+:::
+
+
+
 ## 2018 Scatter plot
-```{r}
+
+
+::: {.cell}
+
+```{.r .cell-code .hidden}
 # Filter 2018 data
 scatter_data_2018_filtered <- combined %>%
   filter(Year == 2018, !is.na(WaterStress), !is.na(TextileValue), WaterStress < 300)
@@ -149,11 +230,31 @@ ggplot(scatter_data_2018_filtered, aes(x = TextileValue, y = WaterStress)) +
        y = "Water Stress (% of renewable resources)") +
   theme_minimal()
 ```
+
+::: {.cell-output .cell-output-stderr .hidden}
+
+```
+`geom_smooth()` using formula = 'y ~ x'
+```
+
+
+:::
+
+::: {.cell-output-display}
+![](index_files/figure-html/unnamed-chunk-4-1.png){width=672}
+:::
+:::
+
+
 **Figure 1.** Scatter plot showing the relationship between water stress levels and textile export values by country.
 
 
 ## Time Series Plot
-```{r}
+
+
+::: {.cell}
+
+```{.r .cell-code .hidden}
 time_series_data <- combined %>%
   filter(`Country Name` %in% c("India", "China", "Bangladesh"), !is.na(WaterStress), !is.na(TextileValue))
 
@@ -167,28 +268,86 @@ ggplot(time_series_data, aes(x = Year)) +
        color = "Indicator") +
   theme_minimal()
 ```
+
+::: {.cell-output-display}
+![](index_files/figure-html/unnamed-chunk-5-1.png){width=672}
+:::
+:::
+
+
 **Figure 2.** Time series of annual textile export values for China, India, and Bangladesh.
 
 ## Correlation Tests
 
-```{r}
+
+
+::: {.cell}
+
+```{.r .cell-code .hidden}
 # India correlation
 india_data <- combined %>% filter(`Country Name` == "India", !is.na(WaterStress), !is.na(TextileValue))
 cor.test(india_data$TextileValue, india_data$WaterStress)
+```
 
-# China correlation
-china_data <- combined %>% filter(`Country Name` == "China", !is.na(WaterStress), !is.na(TextileValue))
-cor.test(china_data$TextileValue, china_data$WaterStress)
-
-# Bangladesh correlation
-bangladesh_data <- combined %>% filter(`Country Name` == "Bangladesh", !is.na(WaterStress), !is.na(TextileValue))
+::: {.cell-output .cell-output-stdout}
 
 ```
 
+	Pearson's product-moment correlation
+
+data:  india_data$TextileValue and india_data$WaterStress
+t = -15.753, df = 18, p-value = 5.662e-12
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9865618 -0.9133402
+sample estimates:
+       cor 
+-0.9655946 
+```
+
+
+:::
+
+```{.r .cell-code .hidden}
+# China correlation
+china_data <- combined %>% filter(`Country Name` == "China", !is.na(WaterStress), !is.na(TextileValue))
+cor.test(china_data$TextileValue, china_data$WaterStress)
+```
+
+::: {.cell-output .cell-output-stdout}
+
+```
+
+	Pearson's product-moment correlation
+
+data:  china_data$TextileValue and china_data$WaterStress
+t = -11.808, df = 13, p-value = 2.535e-08
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9857302 -0.8707596
+sample estimates:
+       cor 
+-0.9564088 
+```
+
+
+:::
+
+```{.r .cell-code .hidden}
+# Bangladesh correlation
+bangladesh_data <- combined %>% filter(`Country Name` == "Bangladesh", !is.na(WaterStress), !is.na(TextileValue))
+```
+:::
+
+
+
 ## Top 5 Countries by Average Textile Output and Water Stress
 
-```{r}
 
+
+::: {.cell}
+
+```{.r .cell-code .hidden}
 country_averages <- combined %>%
   group_by(`Country Name`) %>%
   summarize(avg_textile = mean(TextileValue, na.rm = TRUE),
@@ -200,17 +359,79 @@ top_textile <- country_averages %>% arrange(desc(avg_textile)) %>% slice(1:5)
 top_water_stress <- country_averages %>% arrange(desc(avg_water_stress)) %>% slice(1:5)
 
 top_textile
-top_water_stress
+```
+
+::: {.cell-output .cell-output-stdout}
 
 ```
+# A tibble: 5 × 3
+  `Country Name`       avg_textile avg_water_stress
+  <chr>                      <dbl>            <dbl>
+1 Macao SAR, China            55.5           NaN   
+2 Bangladesh                  42.3             5.72
+3 Syrian Arab Republic        37.4           105.  
+4 Cambodia                    37.2             1.04
+5 Pakistan                    32.9           105.  
+```
+
+
+:::
+
+```{.r .cell-code .hidden}
+top_water_stress
+```
+
+::: {.cell-output .cell-output-stdout}
+
+```
+# A tibble: 5 × 3
+  `Country Name`       avg_textile avg_water_stress
+  <chr>                      <dbl>            <dbl>
+1 Kuwait                      4.55            2612.
+2 United Arab Emirates        3.42            1373.
+3 Saudi Arabia                3.28             866.
+4 Libya                       6.38             603.
+5 Qatar                       1.52             358.
+```
+
+
+:::
+:::
+
+
 
 ## Global Correlation Test
 
-```{r}
+
+
+::: {.cell}
+
+```{.r .cell-code .hidden}
 global_corr_data <- combined %>% filter(!is.na(WaterStress), !is.na(TextileValue))
 cor.test(global_corr_data$TextileValue, global_corr_data$WaterStress)
+```
+
+::: {.cell-output .cell-output-stdout}
 
 ```
+
+	Pearson's product-moment correlation
+
+data:  global_corr_data$TextileValue and global_corr_data$WaterStress
+t = -3.5162, df = 1853, p-value = 0.0004483
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.12645593 -0.03603367
+sample estimates:
+        cor 
+-0.08141232 
+```
+
+
+:::
+:::
+
+
 
 # Discussion
 
@@ -386,3 +607,4 @@ challenge requiring holistic solutions. Sustainable water management
 will depend on integrating sectoral demands, addressing local contexts,
 and collaborating across industries to ensure that water resources are
 protected for both current and future generations.
+
