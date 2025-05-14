@@ -13,7 +13,7 @@ authors:
 bibliography: references.bib
 format:
   html:
-    theme: Lux
+    theme: minty
     toc: true
     toc-depth: 3
     toc-location: left
